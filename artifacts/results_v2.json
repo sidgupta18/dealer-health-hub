@@ -1,0 +1,2433 @@
+{
+  "available": true,
+  "fingerprint": "971d3c8fabc68d7d8fb987ea",
+  "version": "analytics-v2.1",
+  "chosen": "Logistic regression",
+  "selection_metric": "pooled expanding-validation average precision",
+  "threshold": 0.35,
+  "thresholds": {
+    "Persistence baseline": 0.9,
+    "Logistic regression": 0.35,
+    "Random forest": 0.2,
+    "GRU challenger": 0.2
+  },
+  "validation": {
+    "Persistence baseline": {
+      "samples": 360,
+      "events": 47,
+      "positive_rate": 0.13055555555555556,
+      "Average precision": 0.42389884285181034,
+      "ROC-AUC": 0.8004894296784718,
+      "precision": 0.5614035087719298,
+      "recall": 0.6808510638297872,
+      "Brier": 0.1111111111111111,
+      "alert_threshold": 0.9,
+      "Precision@10/month": 0.4833333333333334,
+      "top10_months": [
+        {
+          "month": "2025-10-01",
+          "flagged": 10,
+          "events": 4,
+          "precision": 0.4
+        },
+        {
+          "month": "2025-11-01",
+          "flagged": 10,
+          "events": 7,
+          "precision": 0.7
+        },
+        {
+          "month": "2025-12-01",
+          "flagged": 10,
+          "events": 6,
+          "precision": 0.6
+        },
+        {
+          "month": "2026-01-01",
+          "flagged": 10,
+          "events": 6,
+          "precision": 0.6
+        },
+        {
+          "month": "2026-02-01",
+          "flagged": 10,
+          "events": 4,
+          "precision": 0.4
+        },
+        {
+          "month": "2026-03-01",
+          "flagged": 10,
+          "events": 2,
+          "precision": 0.2
+        }
+      ]
+    },
+    "Logistic regression": {
+      "samples": 360,
+      "events": 47,
+      "positive_rate": 0.13055555555555556,
+      "Average precision": 0.66022195118811,
+      "ROC-AUC": 0.8811093739378696,
+      "precision": 0.6097560975609756,
+      "recall": 0.5319148936170213,
+      "Brier": 0.07419530785449396,
+      "alert_threshold": 0.35,
+      "Precision@10/month": 0.45,
+      "top10_months": [
+        {
+          "month": "2025-10-01",
+          "flagged": 10,
+          "events": 5,
+          "precision": 0.5
+        },
+        {
+          "month": "2025-11-01",
+          "flagged": 10,
+          "events": 8,
+          "precision": 0.8
+        },
+        {
+          "month": "2025-12-01",
+          "flagged": 10,
+          "events": 4,
+          "precision": 0.4
+        },
+        {
+          "month": "2026-01-01",
+          "flagged": 10,
+          "events": 5,
+          "precision": 0.5
+        },
+        {
+          "month": "2026-02-01",
+          "flagged": 10,
+          "events": 3,
+          "precision": 0.3
+        },
+        {
+          "month": "2026-03-01",
+          "flagged": 10,
+          "events": 2,
+          "precision": 0.2
+        }
+      ]
+    },
+    "Random forest": {
+      "samples": 360,
+      "events": 47,
+      "positive_rate": 0.13055555555555556,
+      "Average precision": 0.5597558475118326,
+      "ROC-AUC": 0.8585412276527767,
+      "precision": 0.509090909090909,
+      "recall": 0.5957446808510638,
+      "Brier": 0.0886079771874755,
+      "alert_threshold": 0.2,
+      "Precision@10/month": 0.5166666666666667,
+      "top10_months": [
+        {
+          "month": "2025-10-01",
+          "flagged": 10,
+          "events": 5,
+          "precision": 0.5
+        },
+        {
+          "month": "2025-11-01",
+          "flagged": 10,
+          "events": 8,
+          "precision": 0.8
+        },
+        {
+          "month": "2025-12-01",
+          "flagged": 10,
+          "events": 6,
+          "precision": 0.6
+        },
+        {
+          "month": "2026-01-01",
+          "flagged": 10,
+          "events": 6,
+          "precision": 0.6
+        },
+        {
+          "month": "2026-02-01",
+          "flagged": 10,
+          "events": 4,
+          "precision": 0.4
+        },
+        {
+          "month": "2026-03-01",
+          "flagged": 10,
+          "events": 2,
+          "precision": 0.2
+        }
+      ]
+    },
+    "GRU challenger": {
+      "samples": 360,
+      "events": 47,
+      "positive_rate": 0.13055555555555556,
+      "Average precision": 0.5644157940280001,
+      "ROC-AUC": 0.7987220447284344,
+      "precision": 0.6190476190476191,
+      "recall": 0.5531914893617021,
+      "Brier": 0.08197033543501933,
+      "alert_threshold": 0.2,
+      "Precision@10/month": 0.49999999999999994,
+      "top10_months": [
+        {
+          "month": "2025-10-01",
+          "flagged": 10,
+          "events": 5,
+          "precision": 0.5
+        },
+        {
+          "month": "2025-11-01",
+          "flagged": 10,
+          "events": 7,
+          "precision": 0.7
+        },
+        {
+          "month": "2025-12-01",
+          "flagged": 10,
+          "events": 6,
+          "precision": 0.6
+        },
+        {
+          "month": "2026-01-01",
+          "flagged": 10,
+          "events": 5,
+          "precision": 0.5
+        },
+        {
+          "month": "2026-02-01",
+          "flagged": 10,
+          "events": 4,
+          "precision": 0.4
+        },
+        {
+          "month": "2026-03-01",
+          "flagged": 10,
+          "events": 3,
+          "precision": 0.3
+        }
+      ]
+    }
+  },
+  "test": {
+    "samples": 238,
+    "events": 12,
+    "positive_rate": 0.05042016806722689,
+    "Average precision": 0.42658210150143144,
+    "ROC-AUC": 0.8561946902654867,
+    "precision": 0.6,
+    "recall": 0.5,
+    "Brier": 0.0366113786931537,
+    "alert_threshold": 0.35,
+    "Precision@10/month": 0.225,
+    "top10_months": [
+      {
+        "month": "2026-05-01",
+        "flagged": 10,
+        "events": 1,
+        "precision": 0.1
+      },
+      {
+        "month": "2026-06-01",
+        "flagged": 10,
+        "events": 1,
+        "precision": 0.1
+      },
+      {
+        "month": "2026-07-01",
+        "flagged": 10,
+        "events": 3,
+        "precision": 0.3
+      },
+      {
+        "month": "2026-08-01",
+        "flagged": 10,
+        "events": 4,
+        "precision": 0.4
+      }
+    ]
+  },
+  "test_comparison": {
+    "Persistence baseline": {
+      "samples": 238,
+      "events": 12,
+      "positive_rate": 0.05042016806722689,
+      "Average precision": 0.25583566760037346,
+      "ROC-AUC": 0.6622418879056047,
+      "precision": 0.6666666666666666,
+      "recall": 0.3333333333333333,
+      "Brier": 0.04201680672268908,
+      "alert_threshold": 0.9,
+      "Precision@10/month": 0.125,
+      "top10_months": [
+        {
+          "month": "2026-05-01",
+          "flagged": 10,
+          "events": 0,
+          "precision": 0.0
+        },
+        {
+          "month": "2026-06-01",
+          "flagged": 10,
+          "events": 1,
+          "precision": 0.1
+        },
+        {
+          "month": "2026-07-01",
+          "flagged": 10,
+          "events": 1,
+          "precision": 0.1
+        },
+        {
+          "month": "2026-08-01",
+          "flagged": 10,
+          "events": 3,
+          "precision": 0.3
+        }
+      ]
+    },
+    "Logistic regression": {
+      "samples": 238,
+      "events": 12,
+      "positive_rate": 0.05042016806722689,
+      "Average precision": 0.42658210150143144,
+      "ROC-AUC": 0.8561946902654867,
+      "precision": 0.6,
+      "recall": 0.5,
+      "Brier": 0.0366113786931537,
+      "alert_threshold": 0.35,
+      "Precision@10/month": 0.225,
+      "top10_months": [
+        {
+          "month": "2026-05-01",
+          "flagged": 10,
+          "events": 1,
+          "precision": 0.1
+        },
+        {
+          "month": "2026-06-01",
+          "flagged": 10,
+          "events": 1,
+          "precision": 0.1
+        },
+        {
+          "month": "2026-07-01",
+          "flagged": 10,
+          "events": 3,
+          "precision": 0.3
+        },
+        {
+          "month": "2026-08-01",
+          "flagged": 10,
+          "events": 4,
+          "precision": 0.4
+        }
+      ]
+    },
+    "Random forest": {
+      "samples": 238,
+      "events": 12,
+      "positive_rate": 0.05042016806722689,
+      "Average precision": 0.3958620804785312,
+      "ROC-AUC": 0.7809734513274336,
+      "precision": 0.4117647058823529,
+      "recall": 0.5833333333333334,
+      "Brier": 0.040455492593521325,
+      "alert_threshold": 0.2,
+      "Precision@10/month": 0.17500000000000002,
+      "top10_months": [
+        {
+          "month": "2026-05-01",
+          "flagged": 10,
+          "events": 0,
+          "precision": 0.0
+        },
+        {
+          "month": "2026-06-01",
+          "flagged": 10,
+          "events": 1,
+          "precision": 0.1
+        },
+        {
+          "month": "2026-07-01",
+          "flagged": 10,
+          "events": 2,
+          "precision": 0.2
+        },
+        {
+          "month": "2026-08-01",
+          "flagged": 10,
+          "events": 4,
+          "precision": 0.4
+        }
+      ]
+    },
+    "GRU challenger": {
+      "samples": 238,
+      "events": 12,
+      "positive_rate": 0.05042016806722689,
+      "Average precision": 0.43949810563665503,
+      "ROC-AUC": 0.8399705014749262,
+      "precision": 0.5384615384615384,
+      "recall": 0.5833333333333334,
+      "Brier": 0.03463079641626161,
+      "alert_threshold": 0.2,
+      "Precision@10/month": 0.2,
+      "top10_months": [
+        {
+          "month": "2026-05-01",
+          "flagged": 10,
+          "events": 1,
+          "precision": 0.1
+        },
+        {
+          "month": "2026-06-01",
+          "flagged": 10,
+          "events": 1,
+          "precision": 0.1
+        },
+        {
+          "month": "2026-07-01",
+          "flagged": 10,
+          "events": 2,
+          "precision": 0.2
+        },
+        {
+          "month": "2026-08-01",
+          "flagged": 10,
+          "events": 4,
+          "precision": 0.4
+        }
+      ]
+    }
+  },
+  "folds": [
+    {
+      "fold": 1,
+      "freeze_at": "2025-10-01",
+      "train": {
+        "from": "2025-03-01",
+        "to": "2025-08-01",
+        "samples": 360,
+        "events": 17,
+        "positive_rate": 0.04722222222222222,
+        "latest_label_available": "2025-09-30"
+      },
+      "validation": {
+        "from": "2025-10-01",
+        "to": "2025-11-01",
+        "samples": 120,
+        "events": 24,
+        "positive_rate": 0.2,
+        "latest_label_available": "2025-12-31"
+      },
+      "metrics": {
+        "Persistence baseline": {
+          "samples": 120,
+          "events": 24,
+          "positive_rate": 0.2,
+          "Average precision": 0.3974358974358974,
+          "ROC-AUC": 0.7291666666666667,
+          "precision": 0.5384615384615384,
+          "recall": 0.5833333333333334,
+          "Brier": 0.18333333333333332,
+          "alert_threshold": 0.5
+        },
+        "Logistic regression": {
+          "samples": 120,
+          "events": 24,
+          "positive_rate": 0.2,
+          "Average precision": 0.6555510920545751,
+          "ROC-AUC": 0.8355034722222222,
+          "precision": 0.7272727272727273,
+          "recall": 0.3333333333333333,
+          "Brier": 0.12327143106768589,
+          "alert_threshold": 0.5
+        },
+        "Random forest": {
+          "samples": 120,
+          "events": 24,
+          "positive_rate": 0.2,
+          "Average precision": 0.6596625182428142,
+          "ROC-AUC": 0.8563368055555556,
+          "precision": 0.0,
+          "recall": 0.0,
+          "Brier": 0.15047041227837596,
+          "alert_threshold": 0.5
+        },
+        "GRU challenger": {
+          "samples": 120,
+          "events": 24,
+          "positive_rate": 0.2,
+          "Average precision": 0.6012622722125447,
+          "ROC-AUC": 0.8098958333333334,
+          "precision": 0.8,
+          "recall": 0.3333333333333333,
+          "Brier": 0.13674238297376964,
+          "alert_threshold": 0.5
+        }
+      },
+      "gru_best_epoch": 59,
+      "gru_inner_fit": {
+        "from": "2025-03-01",
+        "to": "2025-05-01",
+        "samples": 180,
+        "events": 8,
+        "positive_rate": 0.044444444444444446,
+        "latest_label_available": "2025-06-30"
+      },
+      "gru_inner_stop": {
+        "from": "2025-07-01",
+        "to": "2025-08-01",
+        "samples": 120,
+        "events": 7,
+        "positive_rate": 0.058333333333333334,
+        "latest_label_available": "2025-09-30"
+      }
+    },
+    {
+      "fold": 2,
+      "freeze_at": "2025-12-01",
+      "train": {
+        "from": "2025-03-01",
+        "to": "2025-10-01",
+        "samples": 480,
+        "events": 43,
+        "positive_rate": 0.08958333333333333,
+        "latest_label_available": "2025-11-30"
+      },
+      "validation": {
+        "from": "2025-12-01",
+        "to": "2026-01-01",
+        "samples": 120,
+        "events": 15,
+        "positive_rate": 0.125,
+        "latest_label_available": "2026-02-28"
+      },
+      "metrics": {
+        "Persistence baseline": {
+          "samples": 120,
+          "events": 15,
+          "positive_rate": 0.125,
+          "Average precision": 0.5302631578947369,
+          "ROC-AUC": 0.8666666666666667,
+          "precision": 0.631578947368421,
+          "recall": 0.8,
+          "Brier": 0.08333333333333333,
+          "alert_threshold": 0.5
+        },
+        "Logistic regression": {
+          "samples": 120,
+          "events": 15,
+          "positive_rate": 0.125,
+          "Average precision": 0.7289549117072818,
+          "ROC-AUC": 0.9346031746031747,
+          "precision": 0.6666666666666666,
+          "recall": 0.5333333333333333,
+          "Brier": 0.06416569418354659,
+          "alert_threshold": 0.5
+        },
+        "Random forest": {
+          "samples": 120,
+          "events": 15,
+          "positive_rate": 0.125,
+          "Average precision": 0.7573288713260663,
+          "ROC-AUC": 0.9542857142857143,
+          "precision": 0.0,
+          "recall": 0.0,
+          "Brier": 0.06992479987378089,
+          "alert_threshold": 0.5
+        },
+        "GRU challenger": {
+          "samples": 120,
+          "events": 15,
+          "positive_rate": 0.125,
+          "Average precision": 0.6734801118421808,
+          "ROC-AUC": 0.9498412698412699,
+          "precision": 1.0,
+          "recall": 0.06666666666666667,
+          "Brier": 0.07563597559227696,
+          "alert_threshold": 0.5
+        }
+      },
+      "gru_best_epoch": 4,
+      "gru_inner_fit": {
+        "from": "2025-03-01",
+        "to": "2025-07-01",
+        "samples": 300,
+        "events": 12,
+        "positive_rate": 0.04,
+        "latest_label_available": "2025-08-31"
+      },
+      "gru_inner_stop": {
+        "from": "2025-09-01",
+        "to": "2025-10-01",
+        "samples": 120,
+        "events": 26,
+        "positive_rate": 0.21666666666666667,
+        "latest_label_available": "2025-11-30"
+      }
+    },
+    {
+      "fold": 3,
+      "freeze_at": "2026-02-01",
+      "train": {
+        "from": "2025-03-01",
+        "to": "2025-12-01",
+        "samples": 600,
+        "events": 62,
+        "positive_rate": 0.10333333333333333,
+        "latest_label_available": "2026-01-31"
+      },
+      "validation": {
+        "from": "2026-02-01",
+        "to": "2026-03-01",
+        "samples": 120,
+        "events": 8,
+        "positive_rate": 0.06666666666666667,
+        "latest_label_available": "2026-04-30"
+      },
+      "metrics": {
+        "Persistence baseline": {
+          "samples": 120,
+          "events": 8,
+          "positive_rate": 0.06666666666666667,
+          "Average precision": 0.39166666666666666,
+          "ROC-AUC": 0.8482142857142857,
+          "precision": 0.5,
+          "recall": 0.75,
+          "Brier": 0.06666666666666667,
+          "alert_threshold": 0.5
+        },
+        "Logistic regression": {
+          "samples": 120,
+          "events": 8,
+          "positive_rate": 0.06666666666666667,
+          "Average precision": 0.7232142857142857,
+          "ROC-AUC": 0.9464285714285714,
+          "precision": 0.7142857142857143,
+          "recall": 0.625,
+          "Brier": 0.03514879831224944,
+          "alert_threshold": 0.5
+        },
+        "Random forest": {
+          "samples": 120,
+          "events": 8,
+          "positive_rate": 0.06666666666666667,
+          "Average precision": 0.6332163547237077,
+          "ROC-AUC": 0.8772321428571428,
+          "precision": 1.0,
+          "recall": 0.125,
+          "Brier": 0.045428719410269616,
+          "alert_threshold": 0.5
+        },
+        "GRU challenger": {
+          "samples": 120,
+          "events": 8,
+          "positive_rate": 0.06666666666666667,
+          "Average precision": 0.716367759224902,
+          "ROC-AUC": 0.9341517857142857,
+          "precision": 0.8333333333333334,
+          "recall": 0.625,
+          "Brier": 0.03353264773901137,
+          "alert_threshold": 0.5
+        }
+      },
+      "gru_best_epoch": 23,
+      "gru_inner_fit": {
+        "from": "2025-03-01",
+        "to": "2025-09-01",
+        "samples": 420,
+        "events": 30,
+        "positive_rate": 0.07142857142857142,
+        "latest_label_available": "2025-10-31"
+      },
+      "gru_inner_stop": {
+        "from": "2025-11-01",
+        "to": "2025-12-01",
+        "samples": 120,
+        "events": 19,
+        "positive_rate": 0.15833333333333333,
+        "latest_label_available": "2026-01-31"
+      }
+    }
+  ],
+  "skipped_folds": [],
+  "splits": {
+    "train": {
+      "from": "2025-03-01",
+      "to": "2026-03-01",
+      "samples": 780,
+      "events": 77,
+      "positive_rate": 0.09871794871794871,
+      "latest_label_available": "2026-04-30"
+    },
+    "validation": {
+      "from": "2025-10-01",
+      "to": "2026-03-01",
+      "samples": 360,
+      "events": 47,
+      "positive_rate": 0.13055555555555556,
+      "latest_label_available": "2026-04-30"
+    },
+    "test": {
+      "from": "2026-05-01",
+      "to": "2026-08-01",
+      "samples": 238,
+      "events": 12,
+      "positive_rate": 0.05042016806722689,
+      "latest_label_available": "2026-09-30"
+    }
+  },
+  "test_start": "2026-05-01",
+  "freeze_at": "2026-05-01",
+  "trained_until": "2026-03-01",
+  "importance": {
+    "sales_units__lag5": 0.15590302579844525,
+    "target_units__lag5": 0.02983892340299378,
+    "lead_conversion_pct__lag5": 0.37227662247874815,
+    "operating_margin_pct__lag5": 0.1901008639547025,
+    "overdue_receivables_pct__lag5": 0.0028719777848941344,
+    "avg_payment_delay_days__lag5": -0.3389675472982025,
+    "inventory_days__lag5": 0.5432499975464771,
+    "stock_over_90_days_pct__lag5": -0.056102580697598416,
+    "customer_satisfaction__lag5": 0.23871744028625214,
+    "service_retention_pct__lag5": -0.12701322813647856,
+    "complaint_resolution_days__lag5": 0.11212816346617142,
+    "sales_units__lag4": -0.23350494784676062,
+    "target_units__lag4": -0.1898914615607063,
+    "lead_conversion_pct__lag4": -0.20807213015393605,
+    "operating_margin_pct__lag4": -0.7054074358765469,
+    "overdue_receivables_pct__lag4": -0.34285559191653575,
+    "avg_payment_delay_days__lag4": 0.014717892353388714,
+    "inventory_days__lag4": 0.06317940212226028,
+    "stock_over_90_days_pct__lag4": -0.4001696022210497,
+    "customer_satisfaction__lag4": -0.11832535537701275,
+    "service_retention_pct__lag4": 0.2641416062647667,
+    "complaint_resolution_days__lag4": 0.2921347713567144,
+    "sales_units__lag3": -0.12492808244576217,
+    "target_units__lag3": 0.275884778834657,
+    "lead_conversion_pct__lag3": 0.5819751027506821,
+    "operating_margin_pct__lag3": 0.6093472900857769,
+    "overdue_receivables_pct__lag3": 0.525094695446418,
+    "avg_payment_delay_days__lag3": -0.25162586732383163,
+    "inventory_days__lag3": 0.18444982451335268,
+    "stock_over_90_days_pct__lag3": 0.14672003842259018,
+    "customer_satisfaction__lag3": 0.004200159085433447,
+    "service_retention_pct__lag3": 0.10849352766470198,
+    "complaint_resolution_days__lag3": 0.472477752579683,
+    "sales_units__lag2": -0.13873972974322055,
+    "target_units__lag2": -0.10487412908173908,
+    "lead_conversion_pct__lag2": 0.2517693556020555,
+    "operating_margin_pct__lag2": 0.30725071209888316,
+    "overdue_receivables_pct__lag2": 0.6035376413946797,
+    "avg_payment_delay_days__lag2": -0.16705894321443504,
+    "inventory_days__lag2": -0.05612113447617667,
+    "stock_over_90_days_pct__lag2": -0.18346581516949315,
+    "customer_satisfaction__lag2": 0.048725860290638655,
+    "service_retention_pct__lag2": 0.0029637634814067334,
+    "complaint_resolution_days__lag2": -0.10870461460885779,
+    "sales_units__lag1": 0.04878730551286037,
+    "target_units__lag1": 0.23874555127236163,
+    "lead_conversion_pct__lag1": -0.056495063228790283,
+    "operating_margin_pct__lag1": 0.2163408625191664,
+    "overdue_receivables_pct__lag1": -0.053014077680911806,
+    "avg_payment_delay_days__lag1": 0.189077893804368,
+    "inventory_days__lag1": -0.2781283746780308,
+    "stock_over_90_days_pct__lag1": -0.16288345675709753,
+    "customer_satisfaction__lag1": -0.33804527622973973,
+    "service_retention_pct__lag1": 0.3518402520092601,
+    "complaint_resolution_days__lag1": 0.39392113126159983,
+    "sales_units__lag0": 0.11053192483886548,
+    "target_units__lag0": -0.09544400408746655,
+    "lead_conversion_pct__lag0": -0.06410453476523599,
+    "operating_margin_pct__lag0": 0.3327080887056845,
+    "overdue_receivables_pct__lag0": 0.7973182962890126,
+    "avg_payment_delay_days__lag0": 1.9995051115677471,
+    "inventory_days__lag0": 0.17724680066690476,
+    "stock_over_90_days_pct__lag0": 0.11335149948089909,
+    "customer_satisfaction__lag0": -0.054705308431319495,
+    "service_retention_pct__lag0": 0.002911659151100376,
+    "complaint_resolution_days__lag0": 0.5271798653714893
+  },
+  "importance_kind": "standardized signed lag coefficients",
+  "local_attribution": "No genuine local attribution is implemented. Observed KPI values are evidence, not model attributions.",
+  "reliability": {
+    "Persistence baseline": [
+      {
+        "Bin": "0.0\u20130.2",
+        "Samples": 232,
+        "Mean prediction": 0.0,
+        "Observed event rate": 0.034482758620689655
+      },
+      {
+        "Bin": "0.8\u20131.0",
+        "Samples": 6,
+        "Mean prediction": 1.0,
+        "Observed event rate": 0.6666666666666666
+      }
+    ],
+    "Logistic regression": [
+      {
+        "Bin": "0.0\u20130.2",
+        "Samples": 225,
+        "Mean prediction": 0.019345143074758778,
+        "Observed event rate": 0.02666666666666667
+      },
+      {
+        "Bin": "0.2\u20130.4",
+        "Samples": 3,
+        "Mean prediction": 0.27554265077450896,
+        "Observed event rate": 0.0
+      },
+      {
+        "Bin": "0.4\u20130.6",
+        "Samples": 4,
+        "Mean prediction": 0.5235742751104218,
+        "Observed event rate": 0.5
+      },
+      {
+        "Bin": "0.6\u20130.8",
+        "Samples": 5,
+        "Mean prediction": 0.7026799829383494,
+        "Observed event rate": 0.8
+      },
+      {
+        "Bin": "0.8\u20131.0",
+        "Samples": 1,
+        "Mean prediction": 0.9742489364177306,
+        "Observed event rate": 0.0
+      }
+    ],
+    "Random forest": [
+      {
+        "Bin": "0.0\u20130.2",
+        "Samples": 221,
+        "Mean prediction": 0.05525787713739189,
+        "Observed event rate": 0.02262443438914027
+      },
+      {
+        "Bin": "0.2\u20130.4",
+        "Samples": 14,
+        "Mean prediction": 0.290186471645075,
+        "Observed event rate": 0.35714285714285715
+      },
+      {
+        "Bin": "0.4\u20130.6",
+        "Samples": 3,
+        "Mean prediction": 0.48614254334304796,
+        "Observed event rate": 0.6666666666666666
+      }
+    ],
+    "GRU challenger": [
+      {
+        "Bin": "0.0\u20130.2",
+        "Samples": 225,
+        "Mean prediction": 0.0211191363632679,
+        "Observed event rate": 0.022222222222222223
+      },
+      {
+        "Bin": "0.2\u20130.4",
+        "Samples": 4,
+        "Mean prediction": 0.2826066017150879,
+        "Observed event rate": 0.25
+      },
+      {
+        "Bin": "0.4\u20130.6",
+        "Samples": 5,
+        "Mean prediction": 0.49084120988845825,
+        "Observed event rate": 0.6
+      },
+      {
+        "Bin": "0.6\u20130.8",
+        "Samples": 3,
+        "Mean prediction": 0.7073332667350769,
+        "Observed event rate": 1.0
+      },
+      {
+        "Bin": "0.8\u20131.0",
+        "Samples": 1,
+        "Mean prediction": 0.8975188732147217,
+        "Observed event rate": 0.0
+      }
+    ]
+  },
+  "blockers": [],
+  "exclusions": {
+    "excluded_gaps": 0,
+    "excluded_missing_windows": 3
+  },
+  "gru_epochs": [
+    59,
+    4,
+    23
+  ],
+  "final_gru_epochs": 23,
+  "predictor_features": [
+    "sales_units__lag5",
+    "target_units__lag5",
+    "lead_conversion_pct__lag5",
+    "operating_margin_pct__lag5",
+    "overdue_receivables_pct__lag5",
+    "avg_payment_delay_days__lag5",
+    "inventory_days__lag5",
+    "stock_over_90_days_pct__lag5",
+    "customer_satisfaction__lag5",
+    "service_retention_pct__lag5",
+    "complaint_resolution_days__lag5",
+    "sales_units__lag4",
+    "target_units__lag4",
+    "lead_conversion_pct__lag4",
+    "operating_margin_pct__lag4",
+    "overdue_receivables_pct__lag4",
+    "avg_payment_delay_days__lag4",
+    "inventory_days__lag4",
+    "stock_over_90_days_pct__lag4",
+    "customer_satisfaction__lag4",
+    "service_retention_pct__lag4",
+    "complaint_resolution_days__lag4",
+    "sales_units__lag3",
+    "target_units__lag3",
+    "lead_conversion_pct__lag3",
+    "operating_margin_pct__lag3",
+    "overdue_receivables_pct__lag3",
+    "avg_payment_delay_days__lag3",
+    "inventory_days__lag3",
+    "stock_over_90_days_pct__lag3",
+    "customer_satisfaction__lag3",
+    "service_retention_pct__lag3",
+    "complaint_resolution_days__lag3",
+    "sales_units__lag2",
+    "target_units__lag2",
+    "lead_conversion_pct__lag2",
+    "operating_margin_pct__lag2",
+    "overdue_receivables_pct__lag2",
+    "avg_payment_delay_days__lag2",
+    "inventory_days__lag2",
+    "stock_over_90_days_pct__lag2",
+    "customer_satisfaction__lag2",
+    "service_retention_pct__lag2",
+    "complaint_resolution_days__lag2",
+    "sales_units__lag1",
+    "target_units__lag1",
+    "lead_conversion_pct__lag1",
+    "operating_margin_pct__lag1",
+    "overdue_receivables_pct__lag1",
+    "avg_payment_delay_days__lag1",
+    "inventory_days__lag1",
+    "stock_over_90_days_pct__lag1",
+    "customer_satisfaction__lag1",
+    "service_retention_pct__lag1",
+    "complaint_resolution_days__lag1",
+    "sales_units__lag0",
+    "target_units__lag0",
+    "lead_conversion_pct__lag0",
+    "operating_margin_pct__lag0",
+    "overdue_receivables_pct__lag0",
+    "avg_payment_delay_days__lag0",
+    "inventory_days__lag0",
+    "stock_over_90_days_pct__lag0",
+    "customer_satisfaction__lag0",
+    "service_retention_pct__lag0",
+    "complaint_resolution_days__lag0"
+  ],
+  "prediction_error": null,
+  "pca": {
+    "available": true,
+    "reference_from": "2024-10-01",
+    "reference_to": "2025-09-01",
+    "reference_rows": 720,
+    "excluded_missing_reference_rows": 0,
+    "indicator_weights": {
+      "target_attainment_pct": 0.07816731255383409,
+      "lead_conversion_pct": 0.1057932664187105,
+      "operating_margin_pct": 0.10784003152219808,
+      "overdue_receivables_pct": 0.09226674064178493,
+      "avg_payment_delay_days": 0.08904594010269166,
+      "inventory_days": 0.10614357635134362,
+      "stock_over_90_days_pct": 0.10005040920838339,
+      "customer_satisfaction": 0.10969175356055762,
+      "service_retention_pct": 0.10718903042238453,
+      "complaint_resolution_days": 0.10381193921811145
+    },
+    "pillar_weights": {
+      "Commercial": 0.1839605789725446,
+      "Financial": 0.28915271226667466,
+      "Inventory": 0.206193985559727,
+      "Customer/service": 0.3206927232010536
+    },
+    "constant_features": [],
+    "varying_features": [
+      "target_attainment_pct",
+      "lead_conversion_pct",
+      "operating_margin_pct",
+      "overdue_receivables_pct",
+      "avg_payment_delay_days",
+      "inventory_days",
+      "stock_over_90_days_pct",
+      "customer_satisfaction",
+      "service_retention_pct",
+      "complaint_resolution_days"
+    ],
+    "retained_components": 2,
+    "retained_variance": 0.8013516174038428,
+    "component_variance": [
+      0.66772225154773,
+      0.1336293658561127,
+      0.05606054091755249,
+      0.04634926546470283,
+      0.022018789453046483,
+      0.01778722946148618,
+      0.0165003943057244,
+      0.01512028312248989,
+      0.01320157207474115,
+      0.011610307796413921
+    ]
+  },
+  "latest_sensitivity": [
+    {
+      "dealer_id": "D001",
+      "dealer_name": "Aarav Motors",
+      "scenario": "Pillar weights \u00b120%",
+      "raw_min": 55.9366575383,
+      "raw_max": 64.4833918217,
+      "raw_class_stability": 1.0,
+      "final_status_stability": 1.0,
+      "max_rank_change": 4.0,
+      "baseline_raw_status": "At Risk",
+      "baseline_final_status": "Critical"
+    },
+    {
+      "dealer_id": "D002",
+      "dealer_name": "Neel Auto",
+      "scenario": "Pillar weights \u00b120%",
+      "raw_min": 82.786997713,
+      "raw_max": 84.7715370442,
+      "raw_class_stability": 1.0,
+      "final_status_stability": 1.0,
+      "max_rank_change": 3.0,
+      "baseline_raw_status": "Healthy",
+      "baseline_final_status": "Healthy"
+    },
+    {
+      "dealer_id": "D003",
+      "dealer_name": "Surya Mobility",
+      "scenario": "Pillar weights \u00b120%",
+      "raw_min": 87.8244227084,
+      "raw_max": 89.6692996185,
+      "raw_class_stability": 1.0,
+      "final_status_stability": 1.0,
+      "max_rank_change": 1.0,
+      "baseline_raw_status": "Healthy",
+      "baseline_final_status": "Healthy"
+    },
+    {
+      "dealer_id": "D004",
+      "dealer_name": "Kiran Wheels",
+      "scenario": "Pillar weights \u00b120%",
+      "raw_min": null,
+      "raw_max": null,
+      "raw_class_stability": null,
+      "final_status_stability": 1.0,
+      "max_rank_change": null,
+      "baseline_raw_status": "Unassessed",
+      "baseline_final_status": "Unassessed"
+    },
+    {
+      "dealer_id": "D005",
+      "dealer_name": "Aruna Motors 05",
+      "scenario": "Pillar weights \u00b120%",
+      "raw_min": 64.1286900948,
+      "raw_max": 67.0631774711,
+      "raw_class_stability": 0.85,
+      "final_status_stability": 0.85,
+      "max_rank_change": 1.0,
+      "baseline_raw_status": "Watchlist",
+      "baseline_final_status": "Watchlist"
+    },
+    {
+      "dealer_id": "D006",
+      "dealer_name": "Tara Motors 06",
+      "scenario": "Pillar weights \u00b120%",
+      "raw_min": 53.0040638062,
+      "raw_max": 58.2428767424,
+      "raw_class_stability": 1.0,
+      "final_status_stability": 1.0,
+      "max_rank_change": 2.0,
+      "baseline_raw_status": "At Risk",
+      "baseline_final_status": "At Risk"
+    },
+    {
+      "dealer_id": "D007",
+      "dealer_name": "Veda Motors 07",
+      "scenario": "Pillar weights \u00b120%",
+      "raw_min": 80.5635729413,
+      "raw_max": 82.4951545025,
+      "raw_class_stability": 1.0,
+      "final_status_stability": 1.0,
+      "max_rank_change": 1.0,
+      "baseline_raw_status": "Healthy",
+      "baseline_final_status": "Healthy"
+    },
+    {
+      "dealer_id": "D008",
+      "dealer_name": "Uday Motors 08",
+      "scenario": "Pillar weights \u00b120%",
+      "raw_min": 76.1131965384,
+      "raw_max": 78.8121307294,
+      "raw_class_stability": 1.0,
+      "final_status_stability": 1.0,
+      "max_rank_change": 4.0,
+      "baseline_raw_status": "Watchlist",
+      "baseline_final_status": "Watchlist"
+    },
+    {
+      "dealer_id": "D009",
+      "dealer_name": "Nila Motors 09",
+      "scenario": "Pillar weights \u00b120%",
+      "raw_min": 61.7197508486,
+      "raw_max": 64.4513173339,
+      "raw_class_stability": 1.0,
+      "final_status_stability": 1.0,
+      "max_rank_change": 1.0,
+      "baseline_raw_status": "At Risk",
+      "baseline_final_status": "At Risk"
+    },
+    {
+      "dealer_id": "D010",
+      "dealer_name": "Aruna Motors 10",
+      "scenario": "Pillar weights \u00b120%",
+      "raw_min": 82.9051453708,
+      "raw_max": 86.1461625938,
+      "raw_class_stability": 1.0,
+      "final_status_stability": 1.0,
+      "max_rank_change": 2.0,
+      "baseline_raw_status": "Healthy",
+      "baseline_final_status": "Healthy"
+    },
+    {
+      "dealer_id": "D011",
+      "dealer_name": "Tara Motors 11",
+      "scenario": "Pillar weights \u00b120%",
+      "raw_min": 74.3112685097,
+      "raw_max": 77.6295348517,
+      "raw_class_stability": 1.0,
+      "final_status_stability": 1.0,
+      "max_rank_change": 2.0,
+      "baseline_raw_status": "Watchlist",
+      "baseline_final_status": "Watchlist"
+    },
+    {
+      "dealer_id": "D012",
+      "dealer_name": "Veda Motors 12",
+      "scenario": "Pillar weights \u00b120%",
+      "raw_min": 86.5828540334,
+      "raw_max": 89.3594018974,
+      "raw_class_stability": 1.0,
+      "final_status_stability": 1.0,
+      "max_rank_change": 2.0,
+      "baseline_raw_status": "Healthy",
+      "baseline_final_status": "Healthy"
+    },
+    {
+      "dealer_id": "D013",
+      "dealer_name": "Uday Motors 13",
+      "scenario": "Pillar weights \u00b120%",
+      "raw_min": 77.8582618715,
+      "raw_max": 81.4533372166,
+      "raw_class_stability": 0.61,
+      "final_status_stability": 0.61,
+      "max_rank_change": 2.0,
+      "baseline_raw_status": "Watchlist",
+      "baseline_final_status": "Watchlist"
+    },
+    {
+      "dealer_id": "D014",
+      "dealer_name": "Nila Motors 14",
+      "scenario": "Pillar weights \u00b120%",
+      "raw_min": 53.0967516911,
+      "raw_max": 57.9911616508,
+      "raw_class_stability": 1.0,
+      "final_status_stability": 1.0,
+      "max_rank_change": 2.0,
+      "baseline_raw_status": "At Risk",
+      "baseline_final_status": "At Risk"
+    },
+    {
+      "dealer_id": "D015",
+      "dealer_name": "Aruna Motors 15",
+      "scenario": "Pillar weights \u00b120%",
+      "raw_min": 73.8283356099,
+      "raw_max": 77.1333492134,
+      "raw_class_stability": 1.0,
+      "final_status_stability": 1.0,
+      "max_rank_change": 2.0,
+      "baseline_raw_status": "Watchlist",
+      "baseline_final_status": "Watchlist"
+    },
+    {
+      "dealer_id": "D016",
+      "dealer_name": "Tara Motors 16",
+      "scenario": "Pillar weights \u00b120%",
+      "raw_min": 75.4314837801,
+      "raw_max": 78.2267642114,
+      "raw_class_stability": 1.0,
+      "final_status_stability": 1.0,
+      "max_rank_change": 2.0,
+      "baseline_raw_status": "Watchlist",
+      "baseline_final_status": "Watchlist"
+    },
+    {
+      "dealer_id": "D017",
+      "dealer_name": "Veda Motors 17",
+      "scenario": "Pillar weights \u00b120%",
+      "raw_min": 50.9695244691,
+      "raw_max": 54.371961143,
+      "raw_class_stability": 1.0,
+      "final_status_stability": 1.0,
+      "max_rank_change": 1.0,
+      "baseline_raw_status": "At Risk",
+      "baseline_final_status": "At Risk"
+    },
+    {
+      "dealer_id": "D018",
+      "dealer_name": "Uday Motors 18",
+      "scenario": "Pillar weights \u00b120%",
+      "raw_min": 33.4060106725,
+      "raw_max": 35.9999368263,
+      "raw_class_stability": 1.0,
+      "final_status_stability": 1.0,
+      "max_rank_change": 1.0,
+      "baseline_raw_status": "Critical",
+      "baseline_final_status": "Critical"
+    },
+    {
+      "dealer_id": "D019",
+      "dealer_name": "Nila Motors 19",
+      "scenario": "Pillar weights \u00b120%",
+      "raw_min": 33.0125058038,
+      "raw_max": 36.6891121895,
+      "raw_class_stability": 1.0,
+      "final_status_stability": 1.0,
+      "max_rank_change": 2.0,
+      "baseline_raw_status": "Critical",
+      "baseline_final_status": "Critical"
+    },
+    {
+      "dealer_id": "D020",
+      "dealer_name": "Aruna Motors 20",
+      "scenario": "Pillar weights \u00b120%",
+      "raw_min": 69.5990092523,
+      "raw_max": 72.1617455927,
+      "raw_class_stability": 1.0,
+      "final_status_stability": 1.0,
+      "max_rank_change": 3.0,
+      "baseline_raw_status": "Watchlist",
+      "baseline_final_status": "Watchlist"
+    },
+    {
+      "dealer_id": "D021",
+      "dealer_name": "Tara Motors 21",
+      "scenario": "Pillar weights \u00b120%",
+      "raw_min": 41.761395051,
+      "raw_max": 44.9963581511,
+      "raw_class_stability": 1.0,
+      "final_status_stability": 1.0,
+      "max_rank_change": 1.0,
+      "baseline_raw_status": "Critical",
+      "baseline_final_status": "Critical"
+    },
+    {
+      "dealer_id": "D022",
+      "dealer_name": "Veda Motors 22",
+      "scenario": "Pillar weights \u00b120%",
+      "raw_min": 37.0494146325,
+      "raw_max": 40.78054267,
+      "raw_class_stability": 1.0,
+      "final_status_stability": 1.0,
+      "max_rank_change": 1.0,
+      "baseline_raw_status": "Critical",
+      "baseline_final_status": "Critical"
+    },
+    {
+      "dealer_id": "D023",
+      "dealer_name": "Uday Motors 23",
+      "scenario": "Pillar weights \u00b120%",
+      "raw_min": 57.1521940362,
+      "raw_max": 59.6508000483,
+      "raw_class_stability": 1.0,
+      "final_status_stability": 1.0,
+      "max_rank_change": 1.0,
+      "baseline_raw_status": "At Risk",
+      "baseline_final_status": "At Risk"
+    },
+    {
+      "dealer_id": "D024",
+      "dealer_name": "Nila Motors 24",
+      "scenario": "Pillar weights \u00b120%",
+      "raw_min": 69.2921871862,
+      "raw_max": 70.3125773126,
+      "raw_class_stability": 1.0,
+      "final_status_stability": 1.0,
+      "max_rank_change": 1.0,
+      "baseline_raw_status": "Watchlist",
+      "baseline_final_status": "Watchlist"
+    },
+    {
+      "dealer_id": "D025",
+      "dealer_name": "Aruna Motors 25",
+      "scenario": "Pillar weights \u00b120%",
+      "raw_min": 76.1904490277,
+      "raw_max": 79.1169816892,
+      "raw_class_stability": 1.0,
+      "final_status_stability": 1.0,
+      "max_rank_change": 4.0,
+      "baseline_raw_status": "Watchlist",
+      "baseline_final_status": "Watchlist"
+    },
+    {
+      "dealer_id": "D026",
+      "dealer_name": "Tara Motors 26",
+      "scenario": "Pillar weights \u00b120%",
+      "raw_min": 71.6057610281,
+      "raw_max": 74.5330778217,
+      "raw_class_stability": 1.0,
+      "final_status_stability": 1.0,
+      "max_rank_change": 2.0,
+      "baseline_raw_status": "Watchlist",
+      "baseline_final_status": "Watchlist"
+    },
+    {
+      "dealer_id": "D027",
+      "dealer_name": "Veda Motors 27",
+      "scenario": "Pillar weights \u00b120%",
+      "raw_min": 67.1444509359,
+      "raw_max": 70.2807759799,
+      "raw_class_stability": 1.0,
+      "final_status_stability": 1.0,
+      "max_rank_change": 1.0,
+      "baseline_raw_status": "Watchlist",
+      "baseline_final_status": "Watchlist"
+    },
+    {
+      "dealer_id": "D028",
+      "dealer_name": "Uday Motors 28",
+      "scenario": "Pillar weights \u00b120%",
+      "raw_min": 71.6306227769,
+      "raw_max": 73.4667797213,
+      "raw_class_stability": 1.0,
+      "final_status_stability": 1.0,
+      "max_rank_change": 1.0,
+      "baseline_raw_status": "Watchlist",
+      "baseline_final_status": "Watchlist"
+    },
+    {
+      "dealer_id": "D029",
+      "dealer_name": "Nila Motors 29",
+      "scenario": "Pillar weights \u00b120%",
+      "raw_min": 51.2105455979,
+      "raw_max": 54.8934992949,
+      "raw_class_stability": 1.0,
+      "final_status_stability": 1.0,
+      "max_rank_change": 2.0,
+      "baseline_raw_status": "At Risk",
+      "baseline_final_status": "At Risk"
+    },
+    {
+      "dealer_id": "D030",
+      "dealer_name": "Aruna Motors 30",
+      "scenario": "Pillar weights \u00b120%",
+      "raw_min": 50.7753814438,
+      "raw_max": 53.5572343357,
+      "raw_class_stability": 1.0,
+      "final_status_stability": 1.0,
+      "max_rank_change": 2.0,
+      "baseline_raw_status": "At Risk",
+      "baseline_final_status": "At Risk"
+    },
+    {
+      "dealer_id": "D031",
+      "dealer_name": "Tara Motors 31",
+      "scenario": "Pillar weights \u00b120%",
+      "raw_min": 86.3307898084,
+      "raw_max": 87.4534170059,
+      "raw_class_stability": 1.0,
+      "final_status_stability": 1.0,
+      "max_rank_change": 0.0,
+      "baseline_raw_status": "Healthy",
+      "baseline_final_status": "Healthy"
+    },
+    {
+      "dealer_id": "D032",
+      "dealer_name": "Veda Motors 32",
+      "scenario": "Pillar weights \u00b120%",
+      "raw_min": 76.5069310426,
+      "raw_max": 78.5478862432,
+      "raw_class_stability": 1.0,
+      "final_status_stability": 1.0,
+      "max_rank_change": 3.0,
+      "baseline_raw_status": "Watchlist",
+      "baseline_final_status": "Watchlist"
+    },
+    {
+      "dealer_id": "D033",
+      "dealer_name": "Uday Motors 33",
+      "scenario": "Pillar weights \u00b120%",
+      "raw_min": 64.0335689027,
+      "raw_max": 64.9575777334,
+      "raw_class_stability": 1.0,
+      "final_status_stability": 1.0,
+      "max_rank_change": 1.0,
+      "baseline_raw_status": "At Risk",
+      "baseline_final_status": "At Risk"
+    },
+    {
+      "dealer_id": "D034",
+      "dealer_name": "Nila Motors 34",
+      "scenario": "Pillar weights \u00b120%",
+      "raw_min": 80.9070994926,
+      "raw_max": 83.993883997,
+      "raw_class_stability": 1.0,
+      "final_status_stability": 1.0,
+      "max_rank_change": 2.0,
+      "baseline_raw_status": "Healthy",
+      "baseline_final_status": "Healthy"
+    },
+    {
+      "dealer_id": "D035",
+      "dealer_name": "Aruna Motors 35",
+      "scenario": "Pillar weights \u00b120%",
+      "raw_min": 88.3324931474,
+      "raw_max": 88.8672649678,
+      "raw_class_stability": 1.0,
+      "final_status_stability": 1.0,
+      "max_rank_change": 2.0,
+      "baseline_raw_status": "Healthy",
+      "baseline_final_status": "Healthy"
+    },
+    {
+      "dealer_id": "D036",
+      "dealer_name": "Tara Motors 36",
+      "scenario": "Pillar weights \u00b120%",
+      "raw_min": 42.8697350958,
+      "raw_max": 46.0233374873,
+      "raw_class_stability": 0.83,
+      "final_status_stability": 0.83,
+      "max_rank_change": 3.0,
+      "baseline_raw_status": "Critical",
+      "baseline_final_status": "Critical"
+    },
+    {
+      "dealer_id": "D037",
+      "dealer_name": "Veda Motors 37",
+      "scenario": "Pillar weights \u00b120%",
+      "raw_min": 53.9934910499,
+      "raw_max": 56.2114407058,
+      "raw_class_stability": 1.0,
+      "final_status_stability": 1.0,
+      "max_rank_change": 2.0,
+      "baseline_raw_status": "At Risk",
+      "baseline_final_status": "At Risk"
+    },
+    {
+      "dealer_id": "D038",
+      "dealer_name": "Uday Motors 38",
+      "scenario": "Pillar weights \u00b120%",
+      "raw_min": 40.741949515,
+      "raw_max": 45.1575578271,
+      "raw_class_stability": 0.98,
+      "final_status_stability": 0.98,
+      "max_rank_change": 3.0,
+      "baseline_raw_status": "Critical",
+      "baseline_final_status": "Critical"
+    },
+    {
+      "dealer_id": "D039",
+      "dealer_name": "Nila Motors 39",
+      "scenario": "Pillar weights \u00b120%",
+      "raw_min": 81.7169931373,
+      "raw_max": 83.3577794899,
+      "raw_class_stability": 1.0,
+      "final_status_stability": 1.0,
+      "max_rank_change": 2.0,
+      "baseline_raw_status": "Healthy",
+      "baseline_final_status": "Healthy"
+    },
+    {
+      "dealer_id": "D040",
+      "dealer_name": "Aruna Motors 40",
+      "scenario": "Pillar weights \u00b120%",
+      "raw_min": 71.5803710112,
+      "raw_max": 75.6858629143,
+      "raw_class_stability": 1.0,
+      "final_status_stability": 1.0,
+      "max_rank_change": 2.0,
+      "baseline_raw_status": "Watchlist",
+      "baseline_final_status": "Watchlist"
+    },
+    {
+      "dealer_id": "D041",
+      "dealer_name": "Tara Motors 41",
+      "scenario": "Pillar weights \u00b120%",
+      "raw_min": 42.7843567935,
+      "raw_max": 45.8257228628,
+      "raw_class_stability": 0.88,
+      "final_status_stability": 0.88,
+      "max_rank_change": 1.0,
+      "baseline_raw_status": "Critical",
+      "baseline_final_status": "Critical"
+    },
+    {
+      "dealer_id": "D042",
+      "dealer_name": "Veda Motors 42",
+      "scenario": "Pillar weights \u00b120%",
+      "raw_min": 70.0869132525,
+      "raw_max": 71.5591090675,
+      "raw_class_stability": 1.0,
+      "final_status_stability": 1.0,
+      "max_rank_change": 1.0,
+      "baseline_raw_status": "Watchlist",
+      "baseline_final_status": "Watchlist"
+    },
+    {
+      "dealer_id": "D043",
+      "dealer_name": "Uday Motors 43",
+      "scenario": "Pillar weights \u00b120%",
+      "raw_min": 55.1047982027,
+      "raw_max": 57.2486704544,
+      "raw_class_stability": 1.0,
+      "final_status_stability": 1.0,
+      "max_rank_change": 2.0,
+      "baseline_raw_status": "At Risk",
+      "baseline_final_status": "At Risk"
+    },
+    {
+      "dealer_id": "D044",
+      "dealer_name": "Nila Motors 44",
+      "scenario": "Pillar weights \u00b120%",
+      "raw_min": 82.4736993127,
+      "raw_max": 85.1800434207,
+      "raw_class_stability": 1.0,
+      "final_status_stability": 1.0,
+      "max_rank_change": 2.0,
+      "baseline_raw_status": "Healthy",
+      "baseline_final_status": "Healthy"
+    },
+    {
+      "dealer_id": "D045",
+      "dealer_name": "Aruna Motors 45",
+      "scenario": "Pillar weights \u00b120%",
+      "raw_min": 82.5242895157,
+      "raw_max": 84.3858919679,
+      "raw_class_stability": 1.0,
+      "final_status_stability": 1.0,
+      "max_rank_change": 2.0,
+      "baseline_raw_status": "Healthy",
+      "baseline_final_status": "Healthy"
+    },
+    {
+      "dealer_id": "D046",
+      "dealer_name": "Tara Motors 46",
+      "scenario": "Pillar weights \u00b120%",
+      "raw_min": 72.9040967901,
+      "raw_max": 75.4003779424,
+      "raw_class_stability": 1.0,
+      "final_status_stability": 1.0,
+      "max_rank_change": 1.0,
+      "baseline_raw_status": "Watchlist",
+      "baseline_final_status": "Watchlist"
+    },
+    {
+      "dealer_id": "D047",
+      "dealer_name": "Veda Motors 47",
+      "scenario": "Pillar weights \u00b120%",
+      "raw_min": 87.4124802734,
+      "raw_max": 89.3453594769,
+      "raw_class_stability": 1.0,
+      "final_status_stability": 1.0,
+      "max_rank_change": 1.0,
+      "baseline_raw_status": "Healthy",
+      "baseline_final_status": "Healthy"
+    },
+    {
+      "dealer_id": "D048",
+      "dealer_name": "Uday Motors 48",
+      "scenario": "Pillar weights \u00b120%",
+      "raw_min": 71.1628992897,
+      "raw_max": 72.6092791249,
+      "raw_class_stability": 1.0,
+      "final_status_stability": 1.0,
+      "max_rank_change": 2.0,
+      "baseline_raw_status": "Watchlist",
+      "baseline_final_status": "Watchlist"
+    },
+    {
+      "dealer_id": "D049",
+      "dealer_name": "Nila Motors 49",
+      "scenario": "Pillar weights \u00b120%",
+      "raw_min": 45.7797941963,
+      "raw_max": 47.2000877677,
+      "raw_class_stability": 1.0,
+      "final_status_stability": 1.0,
+      "max_rank_change": 0.0,
+      "baseline_raw_status": "At Risk",
+      "baseline_final_status": "At Risk"
+    },
+    {
+      "dealer_id": "D050",
+      "dealer_name": "Aruna Motors 50",
+      "scenario": "Pillar weights \u00b120%",
+      "raw_min": 90.6665687896,
+      "raw_max": 91.9977321016,
+      "raw_class_stability": 1.0,
+      "final_status_stability": 1.0,
+      "max_rank_change": 0.0,
+      "baseline_raw_status": "Healthy",
+      "baseline_final_status": "Healthy"
+    },
+    {
+      "dealer_id": "D051",
+      "dealer_name": "Tara Motors 51",
+      "scenario": "Pillar weights \u00b120%",
+      "raw_min": 46.9980992841,
+      "raw_max": 50.2883481169,
+      "raw_class_stability": 1.0,
+      "final_status_stability": 1.0,
+      "max_rank_change": 0.0,
+      "baseline_raw_status": "At Risk",
+      "baseline_final_status": "At Risk"
+    },
+    {
+      "dealer_id": "D052",
+      "dealer_name": "Veda Motors 52",
+      "scenario": "Pillar weights \u00b120%",
+      "raw_min": 36.9938099899,
+      "raw_max": 40.2091630189,
+      "raw_class_stability": 1.0,
+      "final_status_stability": 1.0,
+      "max_rank_change": 1.0,
+      "baseline_raw_status": "Critical",
+      "baseline_final_status": "Critical"
+    },
+    {
+      "dealer_id": "D053",
+      "dealer_name": "Uday Motors 53",
+      "scenario": "Pillar weights \u00b120%",
+      "raw_min": 40.8032889526,
+      "raw_max": 44.1020678622,
+      "raw_class_stability": 1.0,
+      "final_status_stability": 1.0,
+      "max_rank_change": 1.0,
+      "baseline_raw_status": "Critical",
+      "baseline_final_status": "Critical"
+    },
+    {
+      "dealer_id": "D054",
+      "dealer_name": "Nila Motors 54",
+      "scenario": "Pillar weights \u00b120%",
+      "raw_min": 80.3499671403,
+      "raw_max": 81.3943110575,
+      "raw_class_stability": 1.0,
+      "final_status_stability": 1.0,
+      "max_rank_change": 2.0,
+      "baseline_raw_status": "Healthy",
+      "baseline_final_status": "Healthy"
+    },
+    {
+      "dealer_id": "D055",
+      "dealer_name": "Aruna Motors 55",
+      "scenario": "Pillar weights \u00b120%",
+      "raw_min": 77.7032422607,
+      "raw_max": 79.2677055366,
+      "raw_class_stability": 1.0,
+      "final_status_stability": 1.0,
+      "max_rank_change": 0.0,
+      "baseline_raw_status": "Watchlist",
+      "baseline_final_status": "Watchlist"
+    },
+    {
+      "dealer_id": "D056",
+      "dealer_name": "Tara Motors 56",
+      "scenario": "Pillar weights \u00b120%",
+      "raw_min": 75.7459830133,
+      "raw_max": 78.6097847516,
+      "raw_class_stability": 1.0,
+      "final_status_stability": 1.0,
+      "max_rank_change": 3.0,
+      "baseline_raw_status": "Watchlist",
+      "baseline_final_status": "Watchlist"
+    },
+    {
+      "dealer_id": "D057",
+      "dealer_name": "Veda Motors 57",
+      "scenario": "Pillar weights \u00b120%",
+      "raw_min": 33.5357959144,
+      "raw_max": 36.6974729626,
+      "raw_class_stability": 1.0,
+      "final_status_stability": 1.0,
+      "max_rank_change": 1.0,
+      "baseline_raw_status": "Critical",
+      "baseline_final_status": "Critical"
+    },
+    {
+      "dealer_id": "D058",
+      "dealer_name": "Uday Motors 58",
+      "scenario": "Pillar weights \u00b120%",
+      "raw_min": 36.3462541168,
+      "raw_max": 39.7119682567,
+      "raw_class_stability": 1.0,
+      "final_status_stability": 1.0,
+      "max_rank_change": 1.0,
+      "baseline_raw_status": "Critical",
+      "baseline_final_status": "Critical"
+    },
+    {
+      "dealer_id": "D059",
+      "dealer_name": "Nila Motors 59",
+      "scenario": "Pillar weights \u00b120%",
+      "raw_min": 92.2746240021,
+      "raw_max": 93.5380685869,
+      "raw_class_stability": 1.0,
+      "final_status_stability": 1.0,
+      "max_rank_change": 0.0,
+      "baseline_raw_status": "Healthy",
+      "baseline_final_status": "Healthy"
+    },
+    {
+      "dealer_id": "D060",
+      "dealer_name": "Aruna Motors 60",
+      "scenario": "Pillar weights \u00b120%",
+      "raw_min": 79.6032534762,
+      "raw_max": 81.5421482838,
+      "raw_class_stability": 0.87,
+      "final_status_stability": 0.87,
+      "max_rank_change": 1.0,
+      "baseline_raw_status": "Healthy",
+      "baseline_final_status": "Healthy"
+    },
+    {
+      "dealer_id": "D001",
+      "dealer_name": "Aarav Motors",
+      "scenario": "Anchors \u00b15% of span",
+      "raw_min": 57.1613966636,
+      "raw_max": 61.2939887689,
+      "raw_class_stability": 1.0,
+      "final_status_stability": 1.0,
+      "max_rank_change": 1.0,
+      "baseline_raw_status": "At Risk",
+      "baseline_final_status": "Critical"
+    },
+    {
+      "dealer_id": "D002",
+      "dealer_name": "Neel Auto",
+      "scenario": "Anchors \u00b15% of span",
+      "raw_min": 82.1791616897,
+      "raw_max": 86.4361657741,
+      "raw_class_stability": 1.0,
+      "final_status_stability": 1.0,
+      "max_rank_change": 2.0,
+      "baseline_raw_status": "Healthy",
+      "baseline_final_status": "Healthy"
+    },
+    {
+      "dealer_id": "D003",
+      "dealer_name": "Surya Mobility",
+      "scenario": "Anchors \u00b15% of span",
+      "raw_min": 87.2558318214,
+      "raw_max": 90.9202885288,
+      "raw_class_stability": 1.0,
+      "final_status_stability": 1.0,
+      "max_rank_change": 3.0,
+      "baseline_raw_status": "Healthy",
+      "baseline_final_status": "Healthy"
+    },
+    {
+      "dealer_id": "D004",
+      "dealer_name": "Kiran Wheels",
+      "scenario": "Anchors \u00b15% of span",
+      "raw_min": null,
+      "raw_max": null,
+      "raw_class_stability": null,
+      "final_status_stability": 1.0,
+      "max_rank_change": null,
+      "baseline_raw_status": "Unassessed",
+      "baseline_final_status": "Unassessed"
+    },
+    {
+      "dealer_id": "D005",
+      "dealer_name": "Aruna Motors 05",
+      "scenario": "Anchors \u00b15% of span",
+      "raw_min": 63.6789757196,
+      "raw_max": 67.6628443011,
+      "raw_class_stability": 0.71,
+      "final_status_stability": 0.71,
+      "max_rank_change": 0.0,
+      "baseline_raw_status": "Watchlist",
+      "baseline_final_status": "Watchlist"
+    },
+    {
+      "dealer_id": "D006",
+      "dealer_name": "Tara Motors 06",
+      "scenario": "Anchors \u00b15% of span",
+      "raw_min": 53.8757661785,
+      "raw_max": 57.7759973992,
+      "raw_class_stability": 1.0,
+      "final_status_stability": 1.0,
+      "max_rank_change": 1.0,
+      "baseline_raw_status": "At Risk",
+      "baseline_final_status": "At Risk"
+    },
+    {
+      "dealer_id": "D007",
+      "dealer_name": "Veda Motors 07",
+      "scenario": "Anchors \u00b15% of span",
+      "raw_min": 79.4670618058,
+      "raw_max": 83.7960111385,
+      "raw_class_stability": 0.95,
+      "final_status_stability": 0.95,
+      "max_rank_change": 0.0,
+      "baseline_raw_status": "Healthy",
+      "baseline_final_status": "Healthy"
+    },
+    {
+      "dealer_id": "D008",
+      "dealer_name": "Uday Motors 08",
+      "scenario": "Anchors \u00b15% of span",
+      "raw_min": 75.2817418959,
+      "raw_max": 79.476712047,
+      "raw_class_stability": 1.0,
+      "final_status_stability": 1.0,
+      "max_rank_change": 2.0,
+      "baseline_raw_status": "Watchlist",
+      "baseline_final_status": "Watchlist"
+    },
+    {
+      "dealer_id": "D009",
+      "dealer_name": "Nila Motors 09",
+      "scenario": "Anchors \u00b15% of span",
+      "raw_min": 61.1059374592,
+      "raw_max": 65.1743018761,
+      "raw_class_stability": 0.99,
+      "final_status_stability": 0.99,
+      "max_rank_change": 0.0,
+      "baseline_raw_status": "At Risk",
+      "baseline_final_status": "At Risk"
+    },
+    {
+      "dealer_id": "D010",
+      "dealer_name": "Aruna Motors 10",
+      "scenario": "Anchors \u00b15% of span",
+      "raw_min": 82.8681613605,
+      "raw_max": 86.3714564213,
+      "raw_class_stability": 1.0,
+      "final_status_stability": 1.0,
+      "max_rank_change": 1.0,
+      "baseline_raw_status": "Healthy",
+      "baseline_final_status": "Healthy"
+    },
+    {
+      "dealer_id": "D011",
+      "dealer_name": "Tara Motors 11",
+      "scenario": "Anchors \u00b15% of span",
+      "raw_min": 74.0839652266,
+      "raw_max": 78.097401485,
+      "raw_class_stability": 1.0,
+      "final_status_stability": 1.0,
+      "max_rank_change": 0.0,
+      "baseline_raw_status": "Watchlist",
+      "baseline_final_status": "Watchlist"
+    },
+    {
+      "dealer_id": "D012",
+      "dealer_name": "Veda Motors 12",
+      "scenario": "Anchors \u00b15% of span",
+      "raw_min": 86.3952962687,
+      "raw_max": 89.3464156786,
+      "raw_class_stability": 1.0,
+      "final_status_stability": 1.0,
+      "max_rank_change": 3.0,
+      "baseline_raw_status": "Healthy",
+      "baseline_final_status": "Healthy"
+    },
+    {
+      "dealer_id": "D013",
+      "dealer_name": "Uday Motors 13",
+      "scenario": "Anchors \u00b15% of span",
+      "raw_min": 77.3967436157,
+      "raw_max": 81.5117433235,
+      "raw_class_stability": 0.79,
+      "final_status_stability": 0.79,
+      "max_rank_change": 0.0,
+      "baseline_raw_status": "Watchlist",
+      "baseline_final_status": "Watchlist"
+    },
+    {
+      "dealer_id": "D014",
+      "dealer_name": "Nila Motors 14",
+      "scenario": "Anchors \u00b15% of span",
+      "raw_min": 53.708631327,
+      "raw_max": 57.6540383285,
+      "raw_class_stability": 1.0,
+      "final_status_stability": 1.0,
+      "max_rank_change": 1.0,
+      "baseline_raw_status": "At Risk",
+      "baseline_final_status": "At Risk"
+    },
+    {
+      "dealer_id": "D015",
+      "dealer_name": "Aruna Motors 15",
+      "scenario": "Anchors \u00b15% of span",
+      "raw_min": 73.4646142567,
+      "raw_max": 77.3624393692,
+      "raw_class_stability": 1.0,
+      "final_status_stability": 1.0,
+      "max_rank_change": 0.0,
+      "baseline_raw_status": "Watchlist",
+      "baseline_final_status": "Watchlist"
+    },
+    {
+      "dealer_id": "D016",
+      "dealer_name": "Tara Motors 16",
+      "scenario": "Anchors \u00b15% of span",
+      "raw_min": 75.0822945089,
+      "raw_max": 79.0527498365,
+      "raw_class_stability": 1.0,
+      "final_status_stability": 1.0,
+      "max_rank_change": 3.0,
+      "baseline_raw_status": "Watchlist",
+      "baseline_final_status": "Watchlist"
+    },
+    {
+      "dealer_id": "D017",
+      "dealer_name": "Veda Motors 17",
+      "scenario": "Anchors \u00b15% of span",
+      "raw_min": 50.9921230242,
+      "raw_max": 54.8593986317,
+      "raw_class_stability": 1.0,
+      "final_status_stability": 1.0,
+      "max_rank_change": 1.0,
+      "baseline_raw_status": "At Risk",
+      "baseline_final_status": "At Risk"
+    },
+    {
+      "dealer_id": "D018",
+      "dealer_name": "Uday Motors 18",
+      "scenario": "Anchors \u00b15% of span",
+      "raw_min": 32.8431604496,
+      "raw_max": 36.8487691267,
+      "raw_class_stability": 1.0,
+      "final_status_stability": 1.0,
+      "max_rank_change": 1.0,
+      "baseline_raw_status": "Critical",
+      "baseline_final_status": "Critical"
+    },
+    {
+      "dealer_id": "D019",
+      "dealer_name": "Nila Motors 19",
+      "scenario": "Anchors \u00b15% of span",
+      "raw_min": 32.9831156084,
+      "raw_max": 36.8009036637,
+      "raw_class_stability": 1.0,
+      "final_status_stability": 1.0,
+      "max_rank_change": 2.0,
+      "baseline_raw_status": "Critical",
+      "baseline_final_status": "Critical"
+    },
+    {
+      "dealer_id": "D020",
+      "dealer_name": "Aruna Motors 20",
+      "scenario": "Anchors \u00b15% of span",
+      "raw_min": 69.5108875256,
+      "raw_max": 73.5740625102,
+      "raw_class_stability": 1.0,
+      "final_status_stability": 1.0,
+      "max_rank_change": 1.0,
+      "baseline_raw_status": "Watchlist",
+      "baseline_final_status": "Watchlist"
+    },
+    {
+      "dealer_id": "D021",
+      "dealer_name": "Tara Motors 21",
+      "scenario": "Anchors \u00b15% of span",
+      "raw_min": 41.5749077841,
+      "raw_max": 45.3347193857,
+      "raw_class_stability": 0.96,
+      "final_status_stability": 0.96,
+      "max_rank_change": 0.0,
+      "baseline_raw_status": "Critical",
+      "baseline_final_status": "Critical"
+    },
+    {
+      "dealer_id": "D022",
+      "dealer_name": "Veda Motors 22",
+      "scenario": "Anchors \u00b15% of span",
+      "raw_min": 37.2166415028,
+      "raw_max": 41.2099195376,
+      "raw_class_stability": 1.0,
+      "final_status_stability": 1.0,
+      "max_rank_change": 0.0,
+      "baseline_raw_status": "Critical",
+      "baseline_final_status": "Critical"
+    },
+    {
+      "dealer_id": "D023",
+      "dealer_name": "Uday Motors 23",
+      "scenario": "Anchors \u00b15% of span",
+      "raw_min": 56.6441287957,
+      "raw_max": 60.624420122,
+      "raw_class_stability": 1.0,
+      "final_status_stability": 1.0,
+      "max_rank_change": 1.0,
+      "baseline_raw_status": "At Risk",
+      "baseline_final_status": "At Risk"
+    },
+    {
+      "dealer_id": "D024",
+      "dealer_name": "Nila Motors 24",
+      "scenario": "Anchors \u00b15% of span",
+      "raw_min": 67.9560972743,
+      "raw_max": 72.1168650987,
+      "raw_class_stability": 1.0,
+      "final_status_stability": 1.0,
+      "max_rank_change": 0.0,
+      "baseline_raw_status": "Watchlist",
+      "baseline_final_status": "Watchlist"
+    },
+    {
+      "dealer_id": "D025",
+      "dealer_name": "Aruna Motors 25",
+      "scenario": "Anchors \u00b15% of span",
+      "raw_min": 75.648429795,
+      "raw_max": 79.8578685432,
+      "raw_class_stability": 1.0,
+      "final_status_stability": 1.0,
+      "max_rank_change": 3.0,
+      "baseline_raw_status": "Watchlist",
+      "baseline_final_status": "Watchlist"
+    },
+    {
+      "dealer_id": "D026",
+      "dealer_name": "Tara Motors 26",
+      "scenario": "Anchors \u00b15% of span",
+      "raw_min": 70.8853312963,
+      "raw_max": 74.9476938341,
+      "raw_class_stability": 1.0,
+      "final_status_stability": 1.0,
+      "max_rank_change": 1.0,
+      "baseline_raw_status": "Watchlist",
+      "baseline_final_status": "Watchlist"
+    },
+    {
+      "dealer_id": "D027",
+      "dealer_name": "Veda Motors 27",
+      "scenario": "Anchors \u00b15% of span",
+      "raw_min": 66.8353894873,
+      "raw_max": 70.9075601278,
+      "raw_class_stability": 1.0,
+      "final_status_stability": 1.0,
+      "max_rank_change": 0.0,
+      "baseline_raw_status": "Watchlist",
+      "baseline_final_status": "Watchlist"
+    },
+    {
+      "dealer_id": "D028",
+      "dealer_name": "Uday Motors 28",
+      "scenario": "Anchors \u00b15% of span",
+      "raw_min": 70.4675187939,
+      "raw_max": 74.9024133234,
+      "raw_class_stability": 1.0,
+      "final_status_stability": 1.0,
+      "max_rank_change": 1.0,
+      "baseline_raw_status": "Watchlist",
+      "baseline_final_status": "Watchlist"
+    },
+    {
+      "dealer_id": "D029",
+      "dealer_name": "Nila Motors 29",
+      "scenario": "Anchors \u00b15% of span",
+      "raw_min": 51.1425107488,
+      "raw_max": 55.0056564943,
+      "raw_class_stability": 1.0,
+      "final_status_stability": 1.0,
+      "max_rank_change": 2.0,
+      "baseline_raw_status": "At Risk",
+      "baseline_final_status": "At Risk"
+    },
+    {
+      "dealer_id": "D030",
+      "dealer_name": "Aruna Motors 30",
+      "scenario": "Anchors \u00b15% of span",
+      "raw_min": 50.5130364944,
+      "raw_max": 54.2813283558,
+      "raw_class_stability": 1.0,
+      "final_status_stability": 1.0,
+      "max_rank_change": 1.0,
+      "baseline_raw_status": "At Risk",
+      "baseline_final_status": "At Risk"
+    },
+    {
+      "dealer_id": "D031",
+      "dealer_name": "Tara Motors 31",
+      "scenario": "Anchors \u00b15% of span",
+      "raw_min": 85.2969640874,
+      "raw_max": 88.9338366122,
+      "raw_class_stability": 1.0,
+      "final_status_stability": 1.0,
+      "max_rank_change": 1.0,
+      "baseline_raw_status": "Healthy",
+      "baseline_final_status": "Healthy"
+    },
+    {
+      "dealer_id": "D032",
+      "dealer_name": "Veda Motors 32",
+      "scenario": "Anchors \u00b15% of span",
+      "raw_min": 75.7865780347,
+      "raw_max": 79.9408437253,
+      "raw_class_stability": 1.0,
+      "final_status_stability": 1.0,
+      "max_rank_change": 2.0,
+      "baseline_raw_status": "Watchlist",
+      "baseline_final_status": "Watchlist"
+    },
+    {
+      "dealer_id": "D033",
+      "dealer_name": "Uday Motors 33",
+      "scenario": "Anchors \u00b15% of span",
+      "raw_min": 62.7830774621,
+      "raw_max": 66.8857872742,
+      "raw_class_stability": 0.72,
+      "final_status_stability": 0.72,
+      "max_rank_change": 0.0,
+      "baseline_raw_status": "At Risk",
+      "baseline_final_status": "At Risk"
+    },
+    {
+      "dealer_id": "D034",
+      "dealer_name": "Nila Motors 34",
+      "scenario": "Anchors \u00b15% of span",
+      "raw_min": 80.643037018,
+      "raw_max": 84.4490935173,
+      "raw_class_stability": 1.0,
+      "final_status_stability": 1.0,
+      "max_rank_change": 1.0,
+      "baseline_raw_status": "Healthy",
+      "baseline_final_status": "Healthy"
+    },
+    {
+      "dealer_id": "D035",
+      "dealer_name": "Aruna Motors 35",
+      "scenario": "Anchors \u00b15% of span",
+      "raw_min": 86.8513029768,
+      "raw_max": 91.1658932851,
+      "raw_class_stability": 1.0,
+      "final_status_stability": 1.0,
+      "max_rank_change": 2.0,
+      "baseline_raw_status": "Healthy",
+      "baseline_final_status": "Healthy"
+    },
+    {
+      "dealer_id": "D036",
+      "dealer_name": "Tara Motors 36",
+      "scenario": "Anchors \u00b15% of span",
+      "raw_min": 42.6857765692,
+      "raw_max": 46.389669169,
+      "raw_class_stability": 0.82,
+      "final_status_stability": 0.82,
+      "max_rank_change": 1.0,
+      "baseline_raw_status": "Critical",
+      "baseline_final_status": "Critical"
+    },
+    {
+      "dealer_id": "D037",
+      "dealer_name": "Veda Motors 37",
+      "scenario": "Anchors \u00b15% of span",
+      "raw_min": 53.1744870623,
+      "raw_max": 57.1263740066,
+      "raw_class_stability": 1.0,
+      "final_status_stability": 1.0,
+      "max_rank_change": 0.0,
+      "baseline_raw_status": "At Risk",
+      "baseline_final_status": "At Risk"
+    },
+    {
+      "dealer_id": "D038",
+      "dealer_name": "Uday Motors 38",
+      "scenario": "Anchors \u00b15% of span",
+      "raw_min": 41.3223021851,
+      "raw_max": 44.9587740497,
+      "raw_class_stability": 1.0,
+      "final_status_stability": 1.0,
+      "max_rank_change": 0.0,
+      "baseline_raw_status": "Critical",
+      "baseline_final_status": "Critical"
+    },
+    {
+      "dealer_id": "D039",
+      "dealer_name": "Nila Motors 39",
+      "scenario": "Anchors \u00b15% of span",
+      "raw_min": 80.5374102555,
+      "raw_max": 84.8030347064,
+      "raw_class_stability": 1.0,
+      "final_status_stability": 1.0,
+      "max_rank_change": 1.0,
+      "baseline_raw_status": "Healthy",
+      "baseline_final_status": "Healthy"
+    },
+    {
+      "dealer_id": "D040",
+      "dealer_name": "Aruna Motors 40",
+      "scenario": "Anchors \u00b15% of span",
+      "raw_min": 71.768131137,
+      "raw_max": 75.5147229274,
+      "raw_class_stability": 1.0,
+      "final_status_stability": 1.0,
+      "max_rank_change": 1.0,
+      "baseline_raw_status": "Watchlist",
+      "baseline_final_status": "Watchlist"
+    },
+    {
+      "dealer_id": "D041",
+      "dealer_name": "Tara Motors 41",
+      "scenario": "Anchors \u00b15% of span",
+      "raw_min": 42.535677253,
+      "raw_max": 46.5615858138,
+      "raw_class_stability": 0.82,
+      "final_status_stability": 0.82,
+      "max_rank_change": 1.0,
+      "baseline_raw_status": "Critical",
+      "baseline_final_status": "Critical"
+    },
+    {
+      "dealer_id": "D042",
+      "dealer_name": "Veda Motors 42",
+      "scenario": "Anchors \u00b15% of span",
+      "raw_min": 69.1588486636,
+      "raw_max": 73.2180525659,
+      "raw_class_stability": 1.0,
+      "final_status_stability": 1.0,
+      "max_rank_change": 1.0,
+      "baseline_raw_status": "Watchlist",
+      "baseline_final_status": "Watchlist"
+    },
+    {
+      "dealer_id": "D043",
+      "dealer_name": "Uday Motors 43",
+      "scenario": "Anchors \u00b15% of span",
+      "raw_min": 54.335631272,
+      "raw_max": 58.3135625751,
+      "raw_class_stability": 1.0,
+      "final_status_stability": 1.0,
+      "max_rank_change": 1.0,
+      "baseline_raw_status": "At Risk",
+      "baseline_final_status": "At Risk"
+    },
+    {
+      "dealer_id": "D044",
+      "dealer_name": "Nila Motors 44",
+      "scenario": "Anchors \u00b15% of span",
+      "raw_min": 81.4041480461,
+      "raw_max": 85.5896407646,
+      "raw_class_stability": 1.0,
+      "final_status_stability": 1.0,
+      "max_rank_change": 2.0,
+      "baseline_raw_status": "Healthy",
+      "baseline_final_status": "Healthy"
+    },
+    {
+      "dealer_id": "D045",
+      "dealer_name": "Aruna Motors 45",
+      "scenario": "Anchors \u00b15% of span",
+      "raw_min": 81.3931806068,
+      "raw_max": 85.7313372427,
+      "raw_class_stability": 1.0,
+      "final_status_stability": 1.0,
+      "max_rank_change": 2.0,
+      "baseline_raw_status": "Healthy",
+      "baseline_final_status": "Healthy"
+    },
+    {
+      "dealer_id": "D046",
+      "dealer_name": "Tara Motors 46",
+      "scenario": "Anchors \u00b15% of span",
+      "raw_min": 72.1302566083,
+      "raw_max": 76.2384484517,
+      "raw_class_stability": 1.0,
+      "final_status_stability": 1.0,
+      "max_rank_change": 1.0,
+      "baseline_raw_status": "Watchlist",
+      "baseline_final_status": "Watchlist"
+    },
+    {
+      "dealer_id": "D047",
+      "dealer_name": "Veda Motors 47",
+      "scenario": "Anchors \u00b15% of span",
+      "raw_min": 86.8719350407,
+      "raw_max": 90.4820264487,
+      "raw_class_stability": 1.0,
+      "final_status_stability": 1.0,
+      "max_rank_change": 2.0,
+      "baseline_raw_status": "Healthy",
+      "baseline_final_status": "Healthy"
+    },
+    {
+      "dealer_id": "D048",
+      "dealer_name": "Uday Motors 48",
+      "scenario": "Anchors \u00b15% of span",
+      "raw_min": 70.0005081976,
+      "raw_max": 74.1870769094,
+      "raw_class_stability": 1.0,
+      "final_status_stability": 1.0,
+      "max_rank_change": 0.0,
+      "baseline_raw_status": "Watchlist",
+      "baseline_final_status": "Watchlist"
+    },
+    {
+      "dealer_id": "D049",
+      "dealer_name": "Nila Motors 49",
+      "scenario": "Anchors \u00b15% of span",
+      "raw_min": 44.6831310373,
+      "raw_max": 48.6347440609,
+      "raw_class_stability": 0.97,
+      "final_status_stability": 0.97,
+      "max_rank_change": 0.0,
+      "baseline_raw_status": "At Risk",
+      "baseline_final_status": "At Risk"
+    },
+    {
+      "dealer_id": "D050",
+      "dealer_name": "Aruna Motors 50",
+      "scenario": "Anchors \u00b15% of span",
+      "raw_min": 89.7895545037,
+      "raw_max": 92.878159341,
+      "raw_class_stability": 1.0,
+      "final_status_stability": 1.0,
+      "max_rank_change": 0.0,
+      "baseline_raw_status": "Healthy",
+      "baseline_final_status": "Healthy"
+    },
+    {
+      "dealer_id": "D051",
+      "dealer_name": "Tara Motors 51",
+      "scenario": "Anchors \u00b15% of span",
+      "raw_min": 47.1136208214,
+      "raw_max": 50.8111146026,
+      "raw_class_stability": 1.0,
+      "final_status_stability": 1.0,
+      "max_rank_change": 0.0,
+      "baseline_raw_status": "At Risk",
+      "baseline_final_status": "At Risk"
+    },
+    {
+      "dealer_id": "D052",
+      "dealer_name": "Veda Motors 52",
+      "scenario": "Anchors \u00b15% of span",
+      "raw_min": 36.6888379327,
+      "raw_max": 40.5804043568,
+      "raw_class_stability": 1.0,
+      "final_status_stability": 1.0,
+      "max_rank_change": 0.0,
+      "baseline_raw_status": "Critical",
+      "baseline_final_status": "Critical"
+    },
+    {
+      "dealer_id": "D053",
+      "dealer_name": "Uday Motors 53",
+      "scenario": "Anchors \u00b15% of span",
+      "raw_min": 40.6381448061,
+      "raw_max": 44.4051101997,
+      "raw_class_stability": 1.0,
+      "final_status_stability": 1.0,
+      "max_rank_change": 0.0,
+      "baseline_raw_status": "Critical",
+      "baseline_final_status": "Critical"
+    },
+    {
+      "dealer_id": "D054",
+      "dealer_name": "Nila Motors 54",
+      "scenario": "Anchors \u00b15% of span",
+      "raw_min": 79.0909478394,
+      "raw_max": 82.8073388613,
+      "raw_class_stability": 0.82,
+      "final_status_stability": 0.82,
+      "max_rank_change": 1.0,
+      "baseline_raw_status": "Healthy",
+      "baseline_final_status": "Healthy"
+    },
+    {
+      "dealer_id": "D055",
+      "dealer_name": "Aruna Motors 55",
+      "scenario": "Anchors \u00b15% of span",
+      "raw_min": 76.6176564987,
+      "raw_max": 80.8487671745,
+      "raw_class_stability": 0.96,
+      "final_status_stability": 0.96,
+      "max_rank_change": 0.0,
+      "baseline_raw_status": "Watchlist",
+      "baseline_final_status": "Watchlist"
+    },
+    {
+      "dealer_id": "D056",
+      "dealer_name": "Tara Motors 56",
+      "scenario": "Anchors \u00b15% of span",
+      "raw_min": 75.2895756658,
+      "raw_max": 79.4389480056,
+      "raw_class_stability": 1.0,
+      "final_status_stability": 1.0,
+      "max_rank_change": 1.0,
+      "baseline_raw_status": "Watchlist",
+      "baseline_final_status": "Watchlist"
+    },
+    {
+      "dealer_id": "D057",
+      "dealer_name": "Veda Motors 57",
+      "scenario": "Anchors \u00b15% of span",
+      "raw_min": 33.3670680952,
+      "raw_max": 37.4590322045,
+      "raw_class_stability": 1.0,
+      "final_status_stability": 1.0,
+      "max_rank_change": 1.0,
+      "baseline_raw_status": "Critical",
+      "baseline_final_status": "Critical"
+    },
+    {
+      "dealer_id": "D058",
+      "dealer_name": "Uday Motors 58",
+      "scenario": "Anchors \u00b15% of span",
+      "raw_min": 36.3296136065,
+      "raw_max": 40.2655731742,
+      "raw_class_stability": 1.0,
+      "final_status_stability": 1.0,
+      "max_rank_change": 0.0,
+      "baseline_raw_status": "Critical",
+      "baseline_final_status": "Critical"
+    },
+    {
+      "dealer_id": "D059",
+      "dealer_name": "Nila Motors 59",
+      "scenario": "Anchors \u00b15% of span",
+      "raw_min": 91.5266746698,
+      "raw_max": 94.3335428997,
+      "raw_class_stability": 1.0,
+      "final_status_stability": 1.0,
+      "max_rank_change": 0.0,
+      "baseline_raw_status": "Healthy",
+      "baseline_final_status": "Healthy"
+    },
+    {
+      "dealer_id": "D060",
+      "dealer_name": "Aruna Motors 60",
+      "scenario": "Anchors \u00b15% of span",
+      "raw_min": 78.6924005605,
+      "raw_max": 82.8964331191,
+      "raw_class_stability": 0.69,
+      "final_status_stability": 0.69,
+      "max_rank_change": 1.0,
+      "baseline_raw_status": "Healthy",
+      "baseline_final_status": "Healthy"
+    }
+  ]
+}

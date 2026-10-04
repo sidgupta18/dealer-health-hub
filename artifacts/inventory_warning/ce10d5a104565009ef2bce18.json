@@ -1,0 +1,472 @@
+{
+  "data_fingerprint": "cda23a85f70deda04b025df97f399242a7fd98b075aec76f4e71511a2c3fbbdf",
+  "model_version": "inventory-warning-v1",
+  "implementation_fingerprint": "21f540ece06e75fa243a33f9219e540e70a9fcf66dd0cc1fca3b9b04edcf87c8",
+  "artifact_fingerprint": "ce10d5a104565009ef2bce18",
+  "available": true,
+  "chosen": "Inventory random forest",
+  "alert_threshold": 0.5,
+  "config": {
+    "version": "inventory-warning-v1",
+    "event_threshold_pct": 30.0,
+    "threshold_status": "Provisional demo threshold; requires business validation",
+    "horizon_months": 3,
+    "input_months": 6,
+    "test_months": 4,
+    "validation_months": 2,
+    "max_folds": 3,
+    "min_train_months": 2,
+    "min_train_samples": 60,
+    "meaningful_ap_improvement": 0.02,
+    "alert_threshold_rule": "Maximum pooled-validation F2 (recall weighted four times precision); ties use the higher threshold",
+    "alert_grid": [
+      0.05,
+      0.1,
+      0.15,
+      0.2,
+      0.25,
+      0.3,
+      0.35,
+      0.4,
+      0.45,
+      0.5,
+      0.55,
+      0.6,
+      0.65,
+      0.7,
+      0.75,
+      0.8,
+      0.85,
+      0.9,
+      0.95
+    ],
+    "seed": 1729
+  },
+  "features": [
+    "stock_over_90_days_pct__lag5",
+    "inventory_days__lag5",
+    "sales_units__lag5",
+    "target_attainment_pct__lag5",
+    "operating_margin_pct__lag5",
+    "lead_conversion_pct__lag5",
+    "stock_over_90_days_pct__lag4",
+    "inventory_days__lag4",
+    "sales_units__lag4",
+    "target_attainment_pct__lag4",
+    "operating_margin_pct__lag4",
+    "lead_conversion_pct__lag4",
+    "stock_over_90_days_pct__lag3",
+    "inventory_days__lag3",
+    "sales_units__lag3",
+    "target_attainment_pct__lag3",
+    "operating_margin_pct__lag3",
+    "lead_conversion_pct__lag3",
+    "stock_over_90_days_pct__lag2",
+    "inventory_days__lag2",
+    "sales_units__lag2",
+    "target_attainment_pct__lag2",
+    "operating_margin_pct__lag2",
+    "lead_conversion_pct__lag2",
+    "stock_over_90_days_pct__lag1",
+    "inventory_days__lag1",
+    "sales_units__lag1",
+    "target_attainment_pct__lag1",
+    "operating_margin_pct__lag1",
+    "lead_conversion_pct__lag1",
+    "stock_over_90_days_pct__lag0",
+    "inventory_days__lag0",
+    "sales_units__lag0",
+    "target_attainment_pct__lag0",
+    "operating_margin_pct__lag0",
+    "lead_conversion_pct__lag0",
+    "aged_stock_trend_pp_per_month",
+    "inventory_trend_days_per_month",
+    "margin_trend_pp_per_month",
+    "attainment_trend_pp_per_month",
+    "sales_growth_1m_pct",
+    "sales_growth_3m_pct"
+  ],
+  "selection": "Pooled purged-validation AP; challenger requires at least +0.02 absolute AP over trend baseline. Test results never select the model.",
+  "validation": {
+    "Inventory trend baseline": {
+      "samples": 203,
+      "events": 27,
+      "prevalence": 0.1330049261083744,
+      "average_precision": 0.4486760971396221,
+      "roc_auc": 0.8676346801346801,
+      "precision": 0.3770491803278688,
+      "recall": 0.8518518518518519,
+      "precision_top10_flagged": 0.425,
+      "months_without_flags": 0,
+      "brier": 0.09263421068023883,
+      "alert_threshold": 0.25,
+      "top10_months": [
+        {
+          "month": "2025-08-01",
+          "flagged_count": 18,
+          "top_count": 10,
+          "precision": 0.7
+        },
+        {
+          "month": "2025-09-01",
+          "flagged_count": 13,
+          "top_count": 10,
+          "precision": 0.3
+        },
+        {
+          "month": "2025-10-01",
+          "flagged_count": 15,
+          "top_count": 10,
+          "precision": 0.4
+        },
+        {
+          "month": "2025-11-01",
+          "flagged_count": 15,
+          "top_count": 10,
+          "precision": 0.3
+        }
+      ]
+    },
+    "Inventory logistic regression": {
+      "samples": 203,
+      "events": 27,
+      "prevalence": 0.1330049261083744,
+      "average_precision": 0.8470284591532529,
+      "roc_auc": 0.9566498316498316,
+      "precision": 0.5714285714285714,
+      "recall": 0.8888888888888888,
+      "precision_top10_flagged": 0.6067460317460318,
+      "months_without_flags": 0,
+      "brier": 0.04849514606445499,
+      "alert_threshold": 0.25,
+      "top10_months": [
+        {
+          "month": "2025-08-01",
+          "flagged_count": 13,
+          "top_count": 10,
+          "precision": 0.8
+        },
+        {
+          "month": "2025-09-01",
+          "flagged_count": 13,
+          "top_count": 10,
+          "precision": 0.5
+        },
+        {
+          "month": "2025-10-01",
+          "flagged_count": 9,
+          "top_count": 9,
+          "precision": 0.5555555555555556
+        },
+        {
+          "month": "2025-11-01",
+          "flagged_count": 7,
+          "top_count": 7,
+          "precision": 0.5714285714285714
+        }
+      ]
+    },
+    "Inventory random forest": {
+      "samples": 203,
+      "events": 27,
+      "prevalence": 0.1330049261083744,
+      "average_precision": 0.8660561865912155,
+      "roc_auc": 0.9558080808080808,
+      "precision": 0.7586206896551724,
+      "recall": 0.8148148148148148,
+      "precision_top10_flagged": 0.7714285714285714,
+      "months_without_flags": 0,
+      "brier": 0.05464300867445756,
+      "alert_threshold": 0.5,
+      "top10_months": [
+        {
+          "month": "2025-08-01",
+          "flagged_count": 11,
+          "top_count": 10,
+          "precision": 0.8
+        },
+        {
+          "month": "2025-09-01",
+          "flagged_count": 7,
+          "top_count": 7,
+          "precision": 0.7142857142857143
+        },
+        {
+          "month": "2025-10-01",
+          "flagged_count": 7,
+          "top_count": 7,
+          "precision": 0.5714285714285714
+        },
+        {
+          "month": "2025-11-01",
+          "flagged_count": 4,
+          "top_count": 4,
+          "precision": 1.0
+        }
+      ]
+    }
+  },
+  "test": {
+    "Inventory trend baseline": {
+      "samples": 206,
+      "events": 37,
+      "prevalence": 0.1796116504854369,
+      "average_precision": 0.4116427052928198,
+      "roc_auc": 0.8370382216536063,
+      "precision": 0.4576271186440678,
+      "recall": 0.7297297297297297,
+      "precision_top10_flagged": 0.45,
+      "months_without_flags": 0,
+      "brier": 0.11815724444461763,
+      "alert_threshold": 0.25,
+      "top10_months": [
+        {
+          "month": "2026-03-01",
+          "flagged_count": 15,
+          "top_count": 10,
+          "precision": 0.3
+        },
+        {
+          "month": "2026-04-01",
+          "flagged_count": 18,
+          "top_count": 10,
+          "precision": 0.3
+        },
+        {
+          "month": "2026-05-01",
+          "flagged_count": 10,
+          "top_count": 10,
+          "precision": 0.5
+        },
+        {
+          "month": "2026-06-01",
+          "flagged_count": 16,
+          "top_count": 10,
+          "precision": 0.7
+        }
+      ]
+    },
+    "Inventory logistic regression": {
+      "samples": 206,
+      "events": 37,
+      "prevalence": 0.1796116504854369,
+      "average_precision": 0.8168963286184516,
+      "roc_auc": 0.9432272509195586,
+      "precision": 0.6595744680851063,
+      "recall": 0.8378378378378378,
+      "precision_top10_flagged": 0.725,
+      "months_without_flags": 0,
+      "brier": 0.06437864332108487,
+      "alert_threshold": 0.25,
+      "top10_months": [
+        {
+          "month": "2026-03-01",
+          "flagged_count": 10,
+          "top_count": 10,
+          "precision": 0.7
+        },
+        {
+          "month": "2026-04-01",
+          "flagged_count": 12,
+          "top_count": 10,
+          "precision": 0.6
+        },
+        {
+          "month": "2026-05-01",
+          "flagged_count": 12,
+          "top_count": 10,
+          "precision": 0.7
+        },
+        {
+          "month": "2026-06-01",
+          "flagged_count": 13,
+          "top_count": 10,
+          "precision": 0.9
+        }
+      ]
+    },
+    "Inventory random forest": {
+      "samples": 206,
+      "events": 37,
+      "prevalence": 0.1796116504854369,
+      "average_precision": 0.8584468244301868,
+      "roc_auc": 0.9598592675515752,
+      "precision": 0.8571428571428571,
+      "recall": 0.6486486486486487,
+      "precision_top10_flagged": 0.8556547619047619,
+      "months_without_flags": 0,
+      "brier": 0.06152700311523542,
+      "alert_threshold": 0.5,
+      "top10_months": [
+        {
+          "month": "2026-03-01",
+          "flagged_count": 7,
+          "top_count": 7,
+          "precision": 0.8571428571428571
+        },
+        {
+          "month": "2026-04-01",
+          "flagged_count": 7,
+          "top_count": 7,
+          "precision": 0.8571428571428571
+        },
+        {
+          "month": "2026-05-01",
+          "flagged_count": 6,
+          "top_count": 6,
+          "precision": 0.8333333333333334
+        },
+        {
+          "month": "2026-06-01",
+          "flagged_count": 8,
+          "top_count": 8,
+          "precision": 0.875
+        }
+      ]
+    }
+  },
+  "reliability": {
+    "Inventory trend baseline": [
+      {
+        "mean_score": 0.0666510856104406,
+        "observed_rate": 0.031007751937984496,
+        "samples": 129
+      },
+      {
+        "mean_score": 0.29315227255986015,
+        "observed_rate": 0.45098039215686275,
+        "samples": 51
+      },
+      {
+        "mean_score": 0.47742428092052214,
+        "observed_rate": 0.4,
+        "samples": 25
+      },
+      {
+        "mean_score": 0.6205284791823449,
+        "observed_rate": 0.0,
+        "samples": 1
+      }
+    ],
+    "Inventory logistic regression": [
+      {
+        "mean_score": 0.017239860430311737,
+        "observed_rate": 0.0379746835443038,
+        "samples": 158
+      },
+      {
+        "mean_score": 0.3048781459483254,
+        "observed_rate": 0.3333333333333333,
+        "samples": 6
+      },
+      {
+        "mean_score": 0.497697863431657,
+        "observed_rate": 0.3076923076923077,
+        "samples": 13
+      },
+      {
+        "mean_score": 0.710427978978273,
+        "observed_rate": 0.7692307692307693,
+        "samples": 13
+      },
+      {
+        "mean_score": 0.9410363388752498,
+        "observed_rate": 0.9375,
+        "samples": 16
+      }
+    ],
+    "Inventory random forest": [
+      {
+        "mean_score": 0.02679148386085351,
+        "observed_rate": 0.02,
+        "samples": 150
+      },
+      {
+        "mean_score": 0.29691213664231425,
+        "observed_rate": 0.3333333333333333,
+        "samples": 21
+      },
+      {
+        "mean_score": 0.5041242186748806,
+        "observed_rate": 0.6428571428571429,
+        "samples": 14
+      },
+      {
+        "mean_score": 0.6931768761328162,
+        "observed_rate": 0.75,
+        "samples": 12
+      },
+      {
+        "mean_score": 0.8848551267837155,
+        "observed_rate": 1.0,
+        "samples": 9
+      }
+    ]
+  },
+  "folds": [
+    {
+      "freeze_at": "2025-08-01",
+      "train": {
+        "from": "2025-03-01",
+        "to": "2025-04-01",
+        "samples": 104,
+        "events": 16,
+        "prevalence": 0.15384615384615385,
+        "latest_label_available": "2025-07-31"
+      },
+      "validation": {
+        "from": "2025-08-01",
+        "to": "2025-09-01",
+        "samples": 102,
+        "events": 16,
+        "prevalence": 0.1568627450980392,
+        "latest_label_available": "2025-12-31"
+      }
+    },
+    {
+      "freeze_at": "2025-10-01",
+      "train": {
+        "from": "2025-03-01",
+        "to": "2025-06-01",
+        "samples": 205,
+        "events": 34,
+        "prevalence": 0.16585365853658537,
+        "latest_label_available": "2025-09-30"
+      },
+      "validation": {
+        "from": "2025-10-01",
+        "to": "2025-11-01",
+        "samples": 101,
+        "events": 11,
+        "prevalence": 0.10891089108910891,
+        "latest_label_available": "2026-02-28"
+      }
+    }
+  ],
+  "skipped_folds": [
+    {
+      "validation_months": [
+        "2025-06-01",
+        "2025-07-01"
+      ],
+      "reason": "Insufficient training support or single-class/empty split."
+    }
+  ],
+  "final_train": {
+    "from": "2025-03-01",
+    "to": "2025-11-01",
+    "samples": 457,
+    "events": 69,
+    "prevalence": 0.15098468271334792,
+    "latest_label_available": "2026-02-28"
+  },
+  "test_freeze": "2026-03-01",
+  "exclusions": {
+    "current_breach": 210,
+    "at_threshold": 0,
+    "missing_aged_stock": 0,
+    "insufficient_or_gapped_history": 259,
+    "incomplete_future_horizon": 149
+  },
+  "limitations": "Synthetic-data estimate; probabilities are not established as calibrated. Overlapping horizons and repeated dealers reduce independence. This tests future periods for existing dealers, not new-dealer generalisation. A flag supports investigation, not a claim of distress or causality."
+}

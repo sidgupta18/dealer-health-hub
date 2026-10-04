@@ -1,0 +1,43 @@
+/* Stable Streamlit elements and explicitly assigned container keys only. */
+:root { --space: 16px; --ink: #1d1d1f; --muted: #51515a; --accent: #0066cc; --border: #e5e5ea; }
+html, body, [data-testid="stApp"] { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: var(--ink); }
+[data-testid="stMainBlockContainer"] { max-width: 1280px; padding: 4rem 2rem 3rem; }
+[data-testid="stSidebar"] { width: 236px !important; }
+[data-testid="stSidebarUserContent"] { padding: 1.5rem 1rem; }
+[data-testid="stSidebar"] button { justify-content: flex-start; border-radius: 12px; min-height: 42px; }
+[data-testid="stSidebar"] [data-testid="stBaseButton-primary"] { background: #e8f1fc; color: #005bb5; border-color: transparent; }
+h1, h2, h3 { letter-spacing: -.025em; font-weight: 650; }
+[data-testid="stCaptionContainer"] { color: var(--muted); }
+[class*="st-key-card_"] { background: #fff; border-radius: 18px; border: 1px solid var(--border); box-shadow: 0 2px 8px #1d1d1f04; padding: 20px; }
+.st-key-card_toolbar { padding: 12px 18px; }
+.status-badge { display: inline-block; border-radius: 7px; padding: 4px 9px; font-size: 12px; font-weight: 600; max-width:100%; white-space:normal; overflow-wrap:break-word; line-height:1.5; vertical-align:middle; }
+.distribution { display:flex; justify-content:space-between; align-items:center; margin: 0 0 10px; font-size:14px; }
+.identity { display:flex; gap:16px; align-items:center; justify-content:space-between; margin: 4px 0 16px; font-size:20px; font-weight:600; }
+.identity small { display:block; font-size:13px; color:var(--muted); font-weight:400; margin-top:5px; }
+.health-score { font-size:46px; font-weight:650; letter-spacing:-.04em; line-height:1.2; }
+.health-score span { font-size:18px; font-weight:400; color:var(--muted); letter-spacing:0; }
+.health-score small { display:block; font-size:13px; font-weight:400; color:var(--muted); letter-spacing:0; margin:6px 0 0; }
+.mode { font-size:13px; background:#e8f1fc; color:#005bb5; border-radius:8px; padding:8px 12px; display:inline-block; margin-bottom:12px; }
+.empty-icon { font-size:24px; color:var(--muted); border:1px solid var(--border); border-radius:12px; width:48px; height:48px; display:grid; place-items:center; }
+button:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+@media(max-width: 900px) { [data-testid="stMainBlockContainer"] { padding:1rem; } .identity { flex-wrap:wrap; } }
+
+[data-testid="stCaptionContainer"] p { color: #51515a; }
+[data-testid="stSidebar"] button > div { justify-content:flex-start; width:100%; }
+[data-testid="stSidebarUserContent"] [data-testid="stVerticalBlock"] { gap: 8px; }
+[data-testid="stApp"] button:focus-visible { outline: 2px solid #0066cc !important; outline-offset: 3px !important; }
+
+.pillar-meter { margin: 0 0 16px; font-size:14px; }
+.pillar-meter > div:first-child { display:flex; justify-content:space-between; gap:8px; margin-bottom:8px; }
+.pillar-meter span { color:#51515a; }
+.meter-track { background:#efeff2; height:6px; border-radius:4px; overflow:hidden; }
+.meter-track span { display:block; background:#0066cc; height:100%; }
+
+[data-testid="stMainBlockContainer"] [data-testid="stVerticalBlock"] { gap: 12px; }
+[data-testid="stSidebar"] button { padding: 8px 10px; font-size: 13px; }
+[data-testid="stSidebar"] button [data-testid="stMarkdownContainer"] p { max-width:100%; white-space:normal; overflow-wrap:break-word; line-height:1.5; vertical-align:middle; font-size: 13px; }
+
+[data-testid="stCaptionContainer"] p, [data-testid="stCaptionContainer"] { color: #51515a !important; font-size:14px; opacity:1; }
+
+.status-summary { display:flex; flex-wrap:wrap; gap:12px 18px; }
+.status-summary > span { display:flex; align-items:center; gap:8px; }

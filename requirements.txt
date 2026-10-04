@@ -1,0 +1,10 @@
+# Validated Python 3.12 runtime; matches the saved scikit-learn artifacts.
+streamlit==1.65.0
+pandas==3.0.6
+numpy==2.5.3
+scikit-learn==1.9.1
+plotly==7.1.0
+scipy==1.18.1
+joblib==1.6.0
+tiktoken==0.14.0
+# Torch is optional research tooling, not needed for normal startup.

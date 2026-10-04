@@ -1,0 +1,21 @@
+{
+ "version": "analytics-v2.1",
+ "pca_reference_months": 12,
+ "pca_min_complete_rows": 30,
+ "pca_variance_threshold": 0.80,
+ "correlation_flag_abs": 0.85,
+ "sensitivity_seed": 1729,
+ "sensitivity_scenarios": 100,
+ "pillar_weight_relative_perturbation": 0.20,
+ "anchor_perturbation_fraction_of_span": 0.05,
+ "sequence_months": 6,
+ "test_months": 4,
+ "validation_months_per_fold": 2,
+ "max_validation_folds": 3,
+ "minimum_train_months": 6,
+ "selection_metric": "pooled expanding-validation average precision",
+ "threshold_selection": "maximum pooled-validation F1; ties choose the higher threshold",
+ "threshold_grid": [0.10,0.15,0.20,0.25,0.30,0.35,0.40,0.45,0.50,0.55,0.60,0.65,0.70,0.75,0.80,0.85,0.90],
+ "seed": 42,
+ "gru": {"hidden_units":24,"max_epochs":60,"patience":8,"batch_size":64,"learning_rate":0.003}
+}

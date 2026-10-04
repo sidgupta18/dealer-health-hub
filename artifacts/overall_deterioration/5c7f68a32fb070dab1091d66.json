@@ -1,0 +1,655 @@
+{
+  "data_fingerprint": "cda23a85f70deda04b025df97f399242a7fd98b075aec76f4e71511a2c3fbbdf",
+  "implementation_fingerprint": "0a3c9d2ebfb13aa9a233d4b07cb7698cacab733705d8876e391b956580e3596d",
+  "scoring_version": "c00d6a9b3cd6695a225022e117ad7d2a28160031df1a8ea027685cd32dfde83d",
+  "artifact_fingerprint": "5c7f68a32fb070dab1091d66",
+  "model_version": "overall-deterioration-v1",
+  "available": true,
+  "chosen": "Regularised logistic regression",
+  "alert_threshold": 0.65,
+  "config": {
+    "version": "overall-deterioration-v1",
+    "drop_points": 10.0,
+    "qualifying_months": 2,
+    "horizon_months": 3,
+    "input_months": 6,
+    "test_months": 4,
+    "validation_months": 2,
+    "max_folds": 3,
+    "min_train_months": 2,
+    "min_train_samples": 60,
+    "meaningful_ap_improvement": 0.02,
+    "minimum_validation_events": 5,
+    "seed": 1729,
+    "alert_grid": [
+      0.005,
+      0.01,
+      0.02,
+      0.03,
+      0.05,
+      0.1,
+      0.15000000000000002,
+      0.2,
+      0.25,
+      0.30000000000000004,
+      0.35000000000000003,
+      0.4,
+      0.45,
+      0.5,
+      0.55,
+      0.6000000000000001,
+      0.65,
+      0.7000000000000001,
+      0.75,
+      0.8,
+      0.8500000000000001,
+      0.9,
+      0.9500000000000001
+    ]
+  },
+  "target_definition": "Persistent health-score deterioration over the next three months: raw fixed business-weighted health score at least 10 points below the current score in at least 2 of the next three calendar months; the two months need not be consecutive.",
+  "features": [
+    "target_attainment_pct__lag5",
+    "lead_conversion_pct__lag5",
+    "operating_margin_pct__lag5",
+    "overdue_receivables_pct__lag5",
+    "avg_payment_delay_days__lag5",
+    "inventory_days__lag5",
+    "stock_over_90_days_pct__lag5",
+    "customer_satisfaction__lag5",
+    "service_retention_pct__lag5",
+    "complaint_resolution_days__lag5",
+    "raw_index__lag5",
+    "Commercial_score__lag5",
+    "Financial_score__lag5",
+    "Inventory_score__lag5",
+    "Customer/service_score__lag5",
+    "target_attainment_pct__lag4",
+    "lead_conversion_pct__lag4",
+    "operating_margin_pct__lag4",
+    "overdue_receivables_pct__lag4",
+    "avg_payment_delay_days__lag4",
+    "inventory_days__lag4",
+    "stock_over_90_days_pct__lag4",
+    "customer_satisfaction__lag4",
+    "service_retention_pct__lag4",
+    "complaint_resolution_days__lag4",
+    "raw_index__lag4",
+    "Commercial_score__lag4",
+    "Financial_score__lag4",
+    "Inventory_score__lag4",
+    "Customer/service_score__lag4",
+    "target_attainment_pct__lag3",
+    "lead_conversion_pct__lag3",
+    "operating_margin_pct__lag3",
+    "overdue_receivables_pct__lag3",
+    "avg_payment_delay_days__lag3",
+    "inventory_days__lag3",
+    "stock_over_90_days_pct__lag3",
+    "customer_satisfaction__lag3",
+    "service_retention_pct__lag3",
+    "complaint_resolution_days__lag3",
+    "raw_index__lag3",
+    "Commercial_score__lag3",
+    "Financial_score__lag3",
+    "Inventory_score__lag3",
+    "Customer/service_score__lag3",
+    "target_attainment_pct__lag2",
+    "lead_conversion_pct__lag2",
+    "operating_margin_pct__lag2",
+    "overdue_receivables_pct__lag2",
+    "avg_payment_delay_days__lag2",
+    "inventory_days__lag2",
+    "stock_over_90_days_pct__lag2",
+    "customer_satisfaction__lag2",
+    "service_retention_pct__lag2",
+    "complaint_resolution_days__lag2",
+    "raw_index__lag2",
+    "Commercial_score__lag2",
+    "Financial_score__lag2",
+    "Inventory_score__lag2",
+    "Customer/service_score__lag2",
+    "target_attainment_pct__lag1",
+    "lead_conversion_pct__lag1",
+    "operating_margin_pct__lag1",
+    "overdue_receivables_pct__lag1",
+    "avg_payment_delay_days__lag1",
+    "inventory_days__lag1",
+    "stock_over_90_days_pct__lag1",
+    "customer_satisfaction__lag1",
+    "service_retention_pct__lag1",
+    "complaint_resolution_days__lag1",
+    "raw_index__lag1",
+    "Commercial_score__lag1",
+    "Financial_score__lag1",
+    "Inventory_score__lag1",
+    "Customer/service_score__lag1",
+    "target_attainment_pct__lag0",
+    "lead_conversion_pct__lag0",
+    "operating_margin_pct__lag0",
+    "overdue_receivables_pct__lag0",
+    "avg_payment_delay_days__lag0",
+    "inventory_days__lag0",
+    "stock_over_90_days_pct__lag0",
+    "customer_satisfaction__lag0",
+    "service_retention_pct__lag0",
+    "complaint_resolution_days__lag0",
+    "raw_index__lag0",
+    "Commercial_score__lag0",
+    "Financial_score__lag0",
+    "Inventory_score__lag0",
+    "Customer/service_score__lag0",
+    "target_attainment_pct__change1",
+    "lead_conversion_pct__change1",
+    "operating_margin_pct__change1",
+    "overdue_receivables_pct__change1",
+    "avg_payment_delay_days__change1",
+    "inventory_days__change1",
+    "stock_over_90_days_pct__change1",
+    "customer_satisfaction__change1",
+    "service_retention_pct__change1",
+    "complaint_resolution_days__change1",
+    "raw_index__change1",
+    "Commercial_score__change1",
+    "Financial_score__change1",
+    "Inventory_score__change1",
+    "Customer/service_score__change1",
+    "target_attainment_pct__change3",
+    "lead_conversion_pct__change3",
+    "operating_margin_pct__change3",
+    "overdue_receivables_pct__change3",
+    "avg_payment_delay_days__change3",
+    "inventory_days__change3",
+    "stock_over_90_days_pct__change3",
+    "customer_satisfaction__change3",
+    "service_retention_pct__change3",
+    "complaint_resolution_days__change3",
+    "raw_index__change3",
+    "Commercial_score__change3",
+    "Financial_score__change3",
+    "Inventory_score__change3",
+    "Customer/service_score__change3",
+    "target_attainment_pct__trend6",
+    "lead_conversion_pct__trend6",
+    "operating_margin_pct__trend6",
+    "overdue_receivables_pct__trend6",
+    "avg_payment_delay_days__trend6",
+    "inventory_days__trend6",
+    "stock_over_90_days_pct__trend6",
+    "customer_satisfaction__trend6",
+    "service_retention_pct__trend6",
+    "complaint_resolution_days__trend6",
+    "raw_index__trend6",
+    "Commercial_score__trend6",
+    "Financial_score__trend6",
+    "Inventory_score__trend6",
+    "Customer/service_score__trend6"
+  ],
+  "validation": {
+    "Recent health trend": {
+      "samples": 224,
+      "events": 14,
+      "prevalence": 0.0625,
+      "average_precision": 0.03936969860806474,
+      "roc_auc": 0.18095238095238092,
+      "precision": 0.06363636363636363,
+      "recall": 1.0,
+      "precision_top10_flagged": 0.025,
+      "months_without_flags": 0,
+      "brier": 0.1335715658928627,
+      "alert_threshold": 0.005,
+      "top10_months": [
+        {
+          "month": "2025-08-01",
+          "flagged_count": 56,
+          "top_count": 10,
+          "precision": 0.0
+        },
+        {
+          "month": "2025-09-01",
+          "flagged_count": 56,
+          "top_count": 10,
+          "precision": 0.0
+        },
+        {
+          "month": "2025-10-01",
+          "flagged_count": 54,
+          "top_count": 10,
+          "precision": 0.0
+        },
+        {
+          "month": "2025-11-01",
+          "flagged_count": 54,
+          "top_count": 10,
+          "precision": 0.1
+        }
+      ],
+      "confusion_matrix": [
+        [
+          4,
+          206
+        ],
+        [
+          0,
+          14
+        ]
+      ]
+    },
+    "Training prevalence": {
+      "samples": 224,
+      "events": 14,
+      "prevalence": 0.0625,
+      "average_precision": 0.06760204081632654,
+      "roc_auc": 0.5380952380952381,
+      "precision": 0.0625,
+      "recall": 1.0,
+      "precision_top10_flagged": 0.05,
+      "months_without_flags": 0,
+      "brier": 0.058563855229591844,
+      "alert_threshold": 0.03,
+      "top10_months": [
+        {
+          "month": "2025-08-01",
+          "flagged_count": 56,
+          "top_count": 10,
+          "precision": 0.1
+        },
+        {
+          "month": "2025-09-01",
+          "flagged_count": 56,
+          "top_count": 10,
+          "precision": 0.1
+        },
+        {
+          "month": "2025-10-01",
+          "flagged_count": 56,
+          "top_count": 10,
+          "precision": 0.0
+        },
+        {
+          "month": "2025-11-01",
+          "flagged_count": 56,
+          "top_count": 10,
+          "precision": 0.0
+        }
+      ],
+      "confusion_matrix": [
+        [
+          0,
+          210
+        ],
+        [
+          0,
+          14
+        ]
+      ]
+    },
+    "Regularised logistic regression": {
+      "samples": 224,
+      "events": 14,
+      "prevalence": 0.0625,
+      "average_precision": 0.37767891087569866,
+      "roc_auc": 0.8285714285714285,
+      "precision": 0.6666666666666666,
+      "recall": 0.5714285714285714,
+      "precision_top10_flagged": 0.5416666666666666,
+      "months_without_flags": 0,
+      "brier": 0.0671997049522798,
+      "alert_threshold": 0.65,
+      "top10_months": [
+        {
+          "month": "2025-08-01",
+          "flagged_count": 4,
+          "top_count": 4,
+          "precision": 0.75
+        },
+        {
+          "month": "2025-09-01",
+          "flagged_count": 4,
+          "top_count": 4,
+          "precision": 0.75
+        },
+        {
+          "month": "2025-10-01",
+          "flagged_count": 3,
+          "top_count": 3,
+          "precision": 0.6666666666666666
+        },
+        {
+          "month": "2025-11-01",
+          "flagged_count": 1,
+          "top_count": 1,
+          "precision": 0.0
+        }
+      ],
+      "confusion_matrix": [
+        [
+          206,
+          4
+        ],
+        [
+          6,
+          8
+        ]
+      ]
+    },
+    "Constrained random forest": {
+      "samples": 224,
+      "events": 14,
+      "prevalence": 0.0625,
+      "average_precision": 0.19642390958761388,
+      "roc_auc": 0.7904761904761904,
+      "precision": 0.16393442622950818,
+      "recall": 0.7142857142857143,
+      "precision_top10_flagged": 0.1527777777777778,
+      "months_without_flags": 0,
+      "brier": 0.055006220199766885,
+      "alert_threshold": 0.1,
+      "top10_months": [
+        {
+          "month": "2025-08-01",
+          "flagged_count": 23,
+          "top_count": 10,
+          "precision": 0.2
+        },
+        {
+          "month": "2025-09-01",
+          "flagged_count": 10,
+          "top_count": 10,
+          "precision": 0.3
+        },
+        {
+          "month": "2025-10-01",
+          "flagged_count": 19,
+          "top_count": 10,
+          "precision": 0.0
+        },
+        {
+          "month": "2025-11-01",
+          "flagged_count": 9,
+          "top_count": 9,
+          "precision": 0.1111111111111111
+        }
+      ],
+      "confusion_matrix": [
+        [
+          159,
+          51
+        ],
+        [
+          4,
+          10
+        ]
+      ]
+    }
+  },
+  "test": {
+    "Recent health trend": {
+      "samples": 224,
+      "events": 10,
+      "prevalence": 0.044642857142857144,
+      "average_precision": 0.028882342687867317,
+      "roc_auc": 0.20280373831775697,
+      "precision": 0.044642857142857144,
+      "recall": 1.0,
+      "precision_top10_flagged": 0.0,
+      "months_without_flags": 0,
+      "brier": 0.12590868121483742,
+      "alert_threshold": 0.005,
+      "top10_months": [
+        {
+          "month": "2026-03-01",
+          "flagged_count": 56,
+          "top_count": 10,
+          "precision": 0.0
+        },
+        {
+          "month": "2026-04-01",
+          "flagged_count": 56,
+          "top_count": 10,
+          "precision": 0.0
+        },
+        {
+          "month": "2026-05-01",
+          "flagged_count": 56,
+          "top_count": 10,
+          "precision": 0.0
+        },
+        {
+          "month": "2026-06-01",
+          "flagged_count": 56,
+          "top_count": 10,
+          "precision": 0.0
+        }
+      ],
+      "confusion_matrix": [
+        [
+          0,
+          214
+        ],
+        [
+          0,
+          10
+        ]
+      ]
+    },
+    "Training prevalence": {
+      "samples": 224,
+      "events": 10,
+      "prevalence": 0.044642857142857144,
+      "average_precision": 0.044642857142857144,
+      "roc_auc": 0.5,
+      "precision": 0.044642857142857144,
+      "recall": 1.0,
+      "precision_top10_flagged": 0.07500000000000001,
+      "months_without_flags": 0,
+      "brier": 0.0427295918367347,
+      "alert_threshold": 0.03,
+      "top10_months": [
+        {
+          "month": "2026-03-01",
+          "flagged_count": 56,
+          "top_count": 10,
+          "precision": 0.2
+        },
+        {
+          "month": "2026-04-01",
+          "flagged_count": 56,
+          "top_count": 10,
+          "precision": 0.1
+        },
+        {
+          "month": "2026-05-01",
+          "flagged_count": 56,
+          "top_count": 10,
+          "precision": 0.0
+        },
+        {
+          "month": "2026-06-01",
+          "flagged_count": 56,
+          "top_count": 10,
+          "precision": 0.0
+        }
+      ],
+      "confusion_matrix": [
+        [
+          0,
+          214
+        ],
+        [
+          0,
+          10
+        ]
+      ]
+    },
+    "Regularised logistic regression": {
+      "samples": 224,
+      "events": 10,
+      "prevalence": 0.044642857142857144,
+      "average_precision": 0.21710691229902557,
+      "roc_auc": 0.8476635514018692,
+      "precision": 0.0,
+      "recall": 0.0,
+      "precision_top10_flagged": 0.0,
+      "months_without_flags": 3,
+      "brier": 0.042851150109763085,
+      "alert_threshold": 0.65,
+      "top10_months": [
+        {
+          "month": "2026-03-01",
+          "flagged_count": 0,
+          "top_count": 0,
+          "precision": null
+        },
+        {
+          "month": "2026-04-01",
+          "flagged_count": 1,
+          "top_count": 1,
+          "precision": 0.0
+        },
+        {
+          "month": "2026-05-01",
+          "flagged_count": 0,
+          "top_count": 0,
+          "precision": null
+        },
+        {
+          "month": "2026-06-01",
+          "flagged_count": 0,
+          "top_count": 0,
+          "precision": null
+        }
+      ],
+      "confusion_matrix": [
+        [
+          213,
+          1
+        ],
+        [
+          10,
+          0
+        ]
+      ]
+    },
+    "Constrained random forest": {
+      "samples": 224,
+      "events": 10,
+      "prevalence": 0.044642857142857144,
+      "average_precision": 0.19147056339511584,
+      "roc_auc": 0.7757009345794392,
+      "precision": 0.125,
+      "recall": 0.4,
+      "precision_top10_flagged": 0.11666666666666667,
+      "months_without_flags": 0,
+      "brier": 0.039976520386909846,
+      "alert_threshold": 0.1,
+      "top10_months": [
+        {
+          "month": "2026-03-01",
+          "flagged_count": 10,
+          "top_count": 10,
+          "precision": 0.1
+        },
+        {
+          "month": "2026-04-01",
+          "flagged_count": 6,
+          "top_count": 6,
+          "precision": 0.16666666666666666
+        },
+        {
+          "month": "2026-05-01",
+          "flagged_count": 11,
+          "top_count": 10,
+          "precision": 0.2
+        },
+        {
+          "month": "2026-06-01",
+          "flagged_count": 5,
+          "top_count": 5,
+          "precision": 0.0
+        }
+      ],
+      "confusion_matrix": [
+        [
+          186,
+          28
+        ],
+        [
+          6,
+          4
+        ]
+      ]
+    }
+  },
+  "folds": [
+    {
+      "freeze_at": "2025-08-01",
+      "train": {
+        "samples": 112,
+        "events": 7,
+        "prevalence": 0.0625,
+        "start": "2025-03-01",
+        "end": "2025-04-01",
+        "latest_label_available": "2025-07-31"
+      },
+      "validation": {
+        "samples": 112,
+        "events": 8,
+        "prevalence": 0.07142857142857142,
+        "start": "2025-08-01",
+        "end": "2025-09-01",
+        "latest_label_available": "2025-12-31"
+      }
+    },
+    {
+      "freeze_at": "2025-10-01",
+      "train": {
+        "samples": 224,
+        "events": 11,
+        "prevalence": 0.049107142857142856,
+        "start": "2025-03-01",
+        "end": "2025-06-01",
+        "latest_label_available": "2025-09-30"
+      },
+      "validation": {
+        "samples": 112,
+        "events": 6,
+        "prevalence": 0.05357142857142857,
+        "start": "2025-10-01",
+        "end": "2025-11-01",
+        "latest_label_available": "2026-02-28"
+      }
+    }
+  ],
+  "skipped_folds": [
+    {
+      "validation_months": [
+        "2025-06-01",
+        "2025-07-01"
+      ],
+      "reason": "Insufficient training support or single-class/empty split."
+    }
+  ],
+  "final_train": {
+    "samples": 504,
+    "events": 27,
+    "prevalence": 0.05357142857142857,
+    "start": "2025-03-01",
+    "end": "2025-11-01",
+    "latest_label_available": "2026-02-28"
+  },
+  "test_freeze": "2026-03-01",
+  "exclusions": {
+    "insufficient_or_gapped_history": 303,
+    "unknown_future_labels": 180
+  },
+  "showcase_exclusions": {
+    "D001": "Aarav Motors",
+    "D002": "Neel Auto",
+    "D003": "Surya Mobility",
+    "D004": "Kiran Wheels"
+  },
+  "excluded_showcase_rows": 73,
+  "selection": "Validation AP; ML requires +0.02 AP over the better baseline and at least five validation events. Threshold maximises validation F2 (recall weighted four times precision), ties higher threshold. Test never selects models or thresholds.",
+  "limitations": "Prototype index-decline rule, not bankruptcy, business failure or proven causes. Scores are not calibrated percentage chances. Synthetic evidence concerns later months of the existing network, not unseen dealers; repeated dealers and overlapping horizons reduce independence."
+}

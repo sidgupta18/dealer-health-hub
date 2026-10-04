@@ -1,0 +1,22 @@
+{
+ "weights": {"Commercial": 0.25, "Financial": 0.30, "Inventory": 0.25, "Customer/service": 0.20},
+ "kpis": {
+  "target_attainment_pct": {"pillar":"Commercial","good":110,"bad":50,"higher":true},
+  "lead_conversion_pct": {"pillar":"Commercial","good":25,"bad":5,"higher":true},
+  "operating_margin_pct": {"pillar":"Financial","good":10,"bad":-5,"higher":true},
+  "overdue_receivables_pct": {"pillar":"Financial","good":2,"bad":35,"higher":false},
+  "avg_payment_delay_days": {"pillar":"Financial","good":0,"bad":45,"higher":false},
+  "inventory_days": {"pillar":"Inventory","good":30,"bad":120,"higher":false},
+  "stock_over_90_days_pct": {"pillar":"Inventory","good":3,"bad":40,"higher":false},
+  "customer_satisfaction": {"pillar":"Customer/service","good":95,"bad":55,"higher":true},
+  "service_retention_pct": {"pillar":"Customer/service","good":85,"bad":35,"higher":true},
+  "complaint_resolution_days": {"pillar":"Customer/service","good":2,"bad":20,"higher":false}
+ },
+ "classes": {"Healthy":80,"Watchlist":65,"At Risk":45,"Critical":0},
+ "overrides": [
+  {"metric":"overdue_receivables_pct","operator":">=","threshold":30,"status":"Critical"},
+  {"metric":"avg_payment_delay_days","operator":">=","threshold":40,"status":"Critical"},
+  {"metric":"stock_over_90_days_pct","operator":">=","threshold":30,"status":"At Risk"}
+ ],
+ "payment_delay_target_days":20
+}

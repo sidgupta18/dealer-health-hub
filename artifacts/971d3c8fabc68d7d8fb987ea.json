@@ -1,0 +1,938 @@
+{
+  "available": true,
+  "fingerprint": "971d3c8fabc68d7d8fb987ea",
+  "version": "analytics-v2.1",
+  "chosen": "Logistic regression",
+  "selection_metric": "pooled expanding-validation average precision",
+  "threshold": 0.35,
+  "thresholds": {
+    "Persistence baseline": 0.9,
+    "Logistic regression": 0.35,
+    "Random forest": 0.2,
+    "GRU challenger": 0.2
+  },
+  "validation": {
+    "Persistence baseline": {
+      "samples": 360,
+      "events": 47,
+      "positive_rate": 0.13055555555555556,
+      "Average precision": 0.42389884285181034,
+      "ROC-AUC": 0.8004894296784718,
+      "precision": 0.5614035087719298,
+      "recall": 0.6808510638297872,
+      "Brier": 0.1111111111111111,
+      "alert_threshold": 0.9,
+      "Precision@10/month": 0.4833333333333334,
+      "top10_months": [
+        {
+          "month": "2025-10-01",
+          "flagged": 10,
+          "events": 4,
+          "precision": 0.4
+        },
+        {
+          "month": "2025-11-01",
+          "flagged": 10,
+          "events": 7,
+          "precision": 0.7
+        },
+        {
+          "month": "2025-12-01",
+          "flagged": 10,
+          "events": 6,
+          "precision": 0.6
+        },
+        {
+          "month": "2026-01-01",
+          "flagged": 10,
+          "events": 6,
+          "precision": 0.6
+        },
+        {
+          "month": "2026-02-01",
+          "flagged": 10,
+          "events": 4,
+          "precision": 0.4
+        },
+        {
+          "month": "2026-03-01",
+          "flagged": 10,
+          "events": 2,
+          "precision": 0.2
+        }
+      ]
+    },
+    "Logistic regression": {
+      "samples": 360,
+      "events": 47,
+      "positive_rate": 0.13055555555555556,
+      "Average precision": 0.66022195118811,
+      "ROC-AUC": 0.8811093739378696,
+      "precision": 0.6097560975609756,
+      "recall": 0.5319148936170213,
+      "Brier": 0.07419530785449396,
+      "alert_threshold": 0.35,
+      "Precision@10/month": 0.45,
+      "top10_months": [
+        {
+          "month": "2025-10-01",
+          "flagged": 10,
+          "events": 5,
+          "precision": 0.5
+        },
+        {
+          "month": "2025-11-01",
+          "flagged": 10,
+          "events": 8,
+          "precision": 0.8
+        },
+        {
+          "month": "2025-12-01",
+          "flagged": 10,
+          "events": 4,
+          "precision": 0.4
+        },
+        {
+          "month": "2026-01-01",
+          "flagged": 10,
+          "events": 5,
+          "precision": 0.5
+        },
+        {
+          "month": "2026-02-01",
+          "flagged": 10,
+          "events": 3,
+          "precision": 0.3
+        },
+        {
+          "month": "2026-03-01",
+          "flagged": 10,
+          "events": 2,
+          "precision": 0.2
+        }
+      ]
+    },
+    "Random forest": {
+      "samples": 360,
+      "events": 47,
+      "positive_rate": 0.13055555555555556,
+      "Average precision": 0.5597558475118326,
+      "ROC-AUC": 0.8585412276527767,
+      "precision": 0.509090909090909,
+      "recall": 0.5957446808510638,
+      "Brier": 0.0886079771874755,
+      "alert_threshold": 0.2,
+      "Precision@10/month": 0.5166666666666667,
+      "top10_months": [
+        {
+          "month": "2025-10-01",
+          "flagged": 10,
+          "events": 5,
+          "precision": 0.5
+        },
+        {
+          "month": "2025-11-01",
+          "flagged": 10,
+          "events": 8,
+          "precision": 0.8
+        },
+        {
+          "month": "2025-12-01",
+          "flagged": 10,
+          "events": 6,
+          "precision": 0.6
+        },
+        {
+          "month": "2026-01-01",
+          "flagged": 10,
+          "events": 6,
+          "precision": 0.6
+        },
+        {
+          "month": "2026-02-01",
+          "flagged": 10,
+          "events": 4,
+          "precision": 0.4
+        },
+        {
+          "month": "2026-03-01",
+          "flagged": 10,
+          "events": 2,
+          "precision": 0.2
+        }
+      ]
+    },
+    "GRU challenger": {
+      "samples": 360,
+      "events": 47,
+      "positive_rate": 0.13055555555555556,
+      "Average precision": 0.5644157940280001,
+      "ROC-AUC": 0.7987220447284344,
+      "precision": 0.6190476190476191,
+      "recall": 0.5531914893617021,
+      "Brier": 0.08197033543501933,
+      "alert_threshold": 0.2,
+      "Precision@10/month": 0.49999999999999994,
+      "top10_months": [
+        {
+          "month": "2025-10-01",
+          "flagged": 10,
+          "events": 5,
+          "precision": 0.5
+        },
+        {
+          "month": "2025-11-01",
+          "flagged": 10,
+          "events": 7,
+          "precision": 0.7
+        },
+        {
+          "month": "2025-12-01",
+          "flagged": 10,
+          "events": 6,
+          "precision": 0.6
+        },
+        {
+          "month": "2026-01-01",
+          "flagged": 10,
+          "events": 5,
+          "precision": 0.5
+        },
+        {
+          "month": "2026-02-01",
+          "flagged": 10,
+          "events": 4,
+          "precision": 0.4
+        },
+        {
+          "month": "2026-03-01",
+          "flagged": 10,
+          "events": 3,
+          "precision": 0.3
+        }
+      ]
+    }
+  },
+  "test": {
+    "samples": 238,
+    "events": 12,
+    "positive_rate": 0.05042016806722689,
+    "Average precision": 0.42658210150143144,
+    "ROC-AUC": 0.8561946902654867,
+    "precision": 0.6,
+    "recall": 0.5,
+    "Brier": 0.0366113786931537,
+    "alert_threshold": 0.35,
+    "Precision@10/month": 0.225,
+    "top10_months": [
+      {
+        "month": "2026-05-01",
+        "flagged": 10,
+        "events": 1,
+        "precision": 0.1
+      },
+      {
+        "month": "2026-06-01",
+        "flagged": 10,
+        "events": 1,
+        "precision": 0.1
+      },
+      {
+        "month": "2026-07-01",
+        "flagged": 10,
+        "events": 3,
+        "precision": 0.3
+      },
+      {
+        "month": "2026-08-01",
+        "flagged": 10,
+        "events": 4,
+        "precision": 0.4
+      }
+    ]
+  },
+  "test_comparison": {
+    "Persistence baseline": {
+      "samples": 238,
+      "events": 12,
+      "positive_rate": 0.05042016806722689,
+      "Average precision": 0.25583566760037346,
+      "ROC-AUC": 0.6622418879056047,
+      "precision": 0.6666666666666666,
+      "recall": 0.3333333333333333,
+      "Brier": 0.04201680672268908,
+      "alert_threshold": 0.9,
+      "Precision@10/month": 0.125,
+      "top10_months": [
+        {
+          "month": "2026-05-01",
+          "flagged": 10,
+          "events": 0,
+          "precision": 0.0
+        },
+        {
+          "month": "2026-06-01",
+          "flagged": 10,
+          "events": 1,
+          "precision": 0.1
+        },
+        {
+          "month": "2026-07-01",
+          "flagged": 10,
+          "events": 1,
+          "precision": 0.1
+        },
+        {
+          "month": "2026-08-01",
+          "flagged": 10,
+          "events": 3,
+          "precision": 0.3
+        }
+      ]
+    },
+    "Logistic regression": {
+      "samples": 238,
+      "events": 12,
+      "positive_rate": 0.05042016806722689,
+      "Average precision": 0.42658210150143144,
+      "ROC-AUC": 0.8561946902654867,
+      "precision": 0.6,
+      "recall": 0.5,
+      "Brier": 0.0366113786931537,
+      "alert_threshold": 0.35,
+      "Precision@10/month": 0.225,
+      "top10_months": [
+        {
+          "month": "2026-05-01",
+          "flagged": 10,
+          "events": 1,
+          "precision": 0.1
+        },
+        {
+          "month": "2026-06-01",
+          "flagged": 10,
+          "events": 1,
+          "precision": 0.1
+        },
+        {
+          "month": "2026-07-01",
+          "flagged": 10,
+          "events": 3,
+          "precision": 0.3
+        },
+        {
+          "month": "2026-08-01",
+          "flagged": 10,
+          "events": 4,
+          "precision": 0.4
+        }
+      ]
+    },
+    "Random forest": {
+      "samples": 238,
+      "events": 12,
+      "positive_rate": 0.05042016806722689,
+      "Average precision": 0.3958620804785312,
+      "ROC-AUC": 0.7809734513274336,
+      "precision": 0.4117647058823529,
+      "recall": 0.5833333333333334,
+      "Brier": 0.040455492593521325,
+      "alert_threshold": 0.2,
+      "Precision@10/month": 0.17500000000000002,
+      "top10_months": [
+        {
+          "month": "2026-05-01",
+          "flagged": 10,
+          "events": 0,
+          "precision": 0.0
+        },
+        {
+          "month": "2026-06-01",
+          "flagged": 10,
+          "events": 1,
+          "precision": 0.1
+        },
+        {
+          "month": "2026-07-01",
+          "flagged": 10,
+          "events": 2,
+          "precision": 0.2
+        },
+        {
+          "month": "2026-08-01",
+          "flagged": 10,
+          "events": 4,
+          "precision": 0.4
+        }
+      ]
+    },
+    "GRU challenger": {
+      "samples": 238,
+      "events": 12,
+      "positive_rate": 0.05042016806722689,
+      "Average precision": 0.43949810563665503,
+      "ROC-AUC": 0.8399705014749262,
+      "precision": 0.5384615384615384,
+      "recall": 0.5833333333333334,
+      "Brier": 0.03463079641626161,
+      "alert_threshold": 0.2,
+      "Precision@10/month": 0.2,
+      "top10_months": [
+        {
+          "month": "2026-05-01",
+          "flagged": 10,
+          "events": 1,
+          "precision": 0.1
+        },
+        {
+          "month": "2026-06-01",
+          "flagged": 10,
+          "events": 1,
+          "precision": 0.1
+        },
+        {
+          "month": "2026-07-01",
+          "flagged": 10,
+          "events": 2,
+          "precision": 0.2
+        },
+        {
+          "month": "2026-08-01",
+          "flagged": 10,
+          "events": 4,
+          "precision": 0.4
+        }
+      ]
+    }
+  },
+  "folds": [
+    {
+      "fold": 1,
+      "freeze_at": "2025-10-01",
+      "train": {
+        "from": "2025-03-01",
+        "to": "2025-08-01",
+        "samples": 360,
+        "events": 17,
+        "positive_rate": 0.04722222222222222,
+        "latest_label_available": "2025-09-30"
+      },
+      "validation": {
+        "from": "2025-10-01",
+        "to": "2025-11-01",
+        "samples": 120,
+        "events": 24,
+        "positive_rate": 0.2,
+        "latest_label_available": "2025-12-31"
+      },
+      "metrics": {
+        "Persistence baseline": {
+          "samples": 120,
+          "events": 24,
+          "positive_rate": 0.2,
+          "Average precision": 0.3974358974358974,
+          "ROC-AUC": 0.7291666666666667,
+          "precision": 0.5384615384615384,
+          "recall": 0.5833333333333334,
+          "Brier": 0.18333333333333332,
+          "alert_threshold": 0.5
+        },
+        "Logistic regression": {
+          "samples": 120,
+          "events": 24,
+          "positive_rate": 0.2,
+          "Average precision": 0.6555510920545751,
+          "ROC-AUC": 0.8355034722222222,
+          "precision": 0.7272727272727273,
+          "recall": 0.3333333333333333,
+          "Brier": 0.12327143106768589,
+          "alert_threshold": 0.5
+        },
+        "Random forest": {
+          "samples": 120,
+          "events": 24,
+          "positive_rate": 0.2,
+          "Average precision": 0.6596625182428142,
+          "ROC-AUC": 0.8563368055555556,
+          "precision": 0.0,
+          "recall": 0.0,
+          "Brier": 0.15047041227837596,
+          "alert_threshold": 0.5
+        },
+        "GRU challenger": {
+          "samples": 120,
+          "events": 24,
+          "positive_rate": 0.2,
+          "Average precision": 0.6012622722125447,
+          "ROC-AUC": 0.8098958333333334,
+          "precision": 0.8,
+          "recall": 0.3333333333333333,
+          "Brier": 0.13674238297376964,
+          "alert_threshold": 0.5
+        }
+      },
+      "gru_best_epoch": 59,
+      "gru_inner_fit": {
+        "from": "2025-03-01",
+        "to": "2025-05-01",
+        "samples": 180,
+        "events": 8,
+        "positive_rate": 0.044444444444444446,
+        "latest_label_available": "2025-06-30"
+      },
+      "gru_inner_stop": {
+        "from": "2025-07-01",
+        "to": "2025-08-01",
+        "samples": 120,
+        "events": 7,
+        "positive_rate": 0.058333333333333334,
+        "latest_label_available": "2025-09-30"
+      }
+    },
+    {
+      "fold": 2,
+      "freeze_at": "2025-12-01",
+      "train": {
+        "from": "2025-03-01",
+        "to": "2025-10-01",
+        "samples": 480,
+        "events": 43,
+        "positive_rate": 0.08958333333333333,
+        "latest_label_available": "2025-11-30"
+      },
+      "validation": {
+        "from": "2025-12-01",
+        "to": "2026-01-01",
+        "samples": 120,
+        "events": 15,
+        "positive_rate": 0.125,
+        "latest_label_available": "2026-02-28"
+      },
+      "metrics": {
+        "Persistence baseline": {
+          "samples": 120,
+          "events": 15,
+          "positive_rate": 0.125,
+          "Average precision": 0.5302631578947369,
+          "ROC-AUC": 0.8666666666666667,
+          "precision": 0.631578947368421,
+          "recall": 0.8,
+          "Brier": 0.08333333333333333,
+          "alert_threshold": 0.5
+        },
+        "Logistic regression": {
+          "samples": 120,
+          "events": 15,
+          "positive_rate": 0.125,
+          "Average precision": 0.7289549117072818,
+          "ROC-AUC": 0.9346031746031747,
+          "precision": 0.6666666666666666,
+          "recall": 0.5333333333333333,
+          "Brier": 0.06416569418354659,
+          "alert_threshold": 0.5
+        },
+        "Random forest": {
+          "samples": 120,
+          "events": 15,
+          "positive_rate": 0.125,
+          "Average precision": 0.7573288713260663,
+          "ROC-AUC": 0.9542857142857143,
+          "precision": 0.0,
+          "recall": 0.0,
+          "Brier": 0.06992479987378089,
+          "alert_threshold": 0.5
+        },
+        "GRU challenger": {
+          "samples": 120,
+          "events": 15,
+          "positive_rate": 0.125,
+          "Average precision": 0.6734801118421808,
+          "ROC-AUC": 0.9498412698412699,
+          "precision": 1.0,
+          "recall": 0.06666666666666667,
+          "Brier": 0.07563597559227696,
+          "alert_threshold": 0.5
+        }
+      },
+      "gru_best_epoch": 4,
+      "gru_inner_fit": {
+        "from": "2025-03-01",
+        "to": "2025-07-01",
+        "samples": 300,
+        "events": 12,
+        "positive_rate": 0.04,
+        "latest_label_available": "2025-08-31"
+      },
+      "gru_inner_stop": {
+        "from": "2025-09-01",
+        "to": "2025-10-01",
+        "samples": 120,
+        "events": 26,
+        "positive_rate": 0.21666666666666667,
+        "latest_label_available": "2025-11-30"
+      }
+    },
+    {
+      "fold": 3,
+      "freeze_at": "2026-02-01",
+      "train": {
+        "from": "2025-03-01",
+        "to": "2025-12-01",
+        "samples": 600,
+        "events": 62,
+        "positive_rate": 0.10333333333333333,
+        "latest_label_available": "2026-01-31"
+      },
+      "validation": {
+        "from": "2026-02-01",
+        "to": "2026-03-01",
+        "samples": 120,
+        "events": 8,
+        "positive_rate": 0.06666666666666667,
+        "latest_label_available": "2026-04-30"
+      },
+      "metrics": {
+        "Persistence baseline": {
+          "samples": 120,
+          "events": 8,
+          "positive_rate": 0.06666666666666667,
+          "Average precision": 0.39166666666666666,
+          "ROC-AUC": 0.8482142857142857,
+          "precision": 0.5,
+          "recall": 0.75,
+          "Brier": 0.06666666666666667,
+          "alert_threshold": 0.5
+        },
+        "Logistic regression": {
+          "samples": 120,
+          "events": 8,
+          "positive_rate": 0.06666666666666667,
+          "Average precision": 0.7232142857142857,
+          "ROC-AUC": 0.9464285714285714,
+          "precision": 0.7142857142857143,
+          "recall": 0.625,
+          "Brier": 0.03514879831224944,
+          "alert_threshold": 0.5
+        },
+        "Random forest": {
+          "samples": 120,
+          "events": 8,
+          "positive_rate": 0.06666666666666667,
+          "Average precision": 0.6332163547237077,
+          "ROC-AUC": 0.8772321428571428,
+          "precision": 1.0,
+          "recall": 0.125,
+          "Brier": 0.045428719410269616,
+          "alert_threshold": 0.5
+        },
+        "GRU challenger": {
+          "samples": 120,
+          "events": 8,
+          "positive_rate": 0.06666666666666667,
+          "Average precision": 0.716367759224902,
+          "ROC-AUC": 0.9341517857142857,
+          "precision": 0.8333333333333334,
+          "recall": 0.625,
+          "Brier": 0.03353264773901137,
+          "alert_threshold": 0.5
+        }
+      },
+      "gru_best_epoch": 23,
+      "gru_inner_fit": {
+        "from": "2025-03-01",
+        "to": "2025-09-01",
+        "samples": 420,
+        "events": 30,
+        "positive_rate": 0.07142857142857142,
+        "latest_label_available": "2025-10-31"
+      },
+      "gru_inner_stop": {
+        "from": "2025-11-01",
+        "to": "2025-12-01",
+        "samples": 120,
+        "events": 19,
+        "positive_rate": 0.15833333333333333,
+        "latest_label_available": "2026-01-31"
+      }
+    }
+  ],
+  "skipped_folds": [],
+  "splits": {
+    "train": {
+      "from": "2025-03-01",
+      "to": "2026-03-01",
+      "samples": 780,
+      "events": 77,
+      "positive_rate": 0.09871794871794871,
+      "latest_label_available": "2026-04-30"
+    },
+    "validation": {
+      "from": "2025-10-01",
+      "to": "2026-03-01",
+      "samples": 360,
+      "events": 47,
+      "positive_rate": 0.13055555555555556,
+      "latest_label_available": "2026-04-30"
+    },
+    "test": {
+      "from": "2026-05-01",
+      "to": "2026-08-01",
+      "samples": 238,
+      "events": 12,
+      "positive_rate": 0.05042016806722689,
+      "latest_label_available": "2026-09-30"
+    }
+  },
+  "test_start": "2026-05-01",
+  "freeze_at": "2026-05-01",
+  "trained_until": "2026-03-01",
+  "importance": {
+    "sales_units__lag5": 0.15590302579844525,
+    "target_units__lag5": 0.02983892340299378,
+    "lead_conversion_pct__lag5": 0.37227662247874815,
+    "operating_margin_pct__lag5": 0.1901008639547025,
+    "overdue_receivables_pct__lag5": 0.0028719777848941344,
+    "avg_payment_delay_days__lag5": -0.3389675472982025,
+    "inventory_days__lag5": 0.5432499975464771,
+    "stock_over_90_days_pct__lag5": -0.056102580697598416,
+    "customer_satisfaction__lag5": 0.23871744028625214,
+    "service_retention_pct__lag5": -0.12701322813647856,
+    "complaint_resolution_days__lag5": 0.11212816346617142,
+    "sales_units__lag4": -0.23350494784676062,
+    "target_units__lag4": -0.1898914615607063,
+    "lead_conversion_pct__lag4": -0.20807213015393605,
+    "operating_margin_pct__lag4": -0.7054074358765469,
+    "overdue_receivables_pct__lag4": -0.34285559191653575,
+    "avg_payment_delay_days__lag4": 0.014717892353388714,
+    "inventory_days__lag4": 0.06317940212226028,
+    "stock_over_90_days_pct__lag4": -0.4001696022210497,
+    "customer_satisfaction__lag4": -0.11832535537701275,
+    "service_retention_pct__lag4": 0.2641416062647667,
+    "complaint_resolution_days__lag4": 0.2921347713567144,
+    "sales_units__lag3": -0.12492808244576217,
+    "target_units__lag3": 0.275884778834657,
+    "lead_conversion_pct__lag3": 0.5819751027506821,
+    "operating_margin_pct__lag3": 0.6093472900857769,
+    "overdue_receivables_pct__lag3": 0.525094695446418,
+    "avg_payment_delay_days__lag3": -0.25162586732383163,
+    "inventory_days__lag3": 0.18444982451335268,
+    "stock_over_90_days_pct__lag3": 0.14672003842259018,
+    "customer_satisfaction__lag3": 0.004200159085433447,
+    "service_retention_pct__lag3": 0.10849352766470198,
+    "complaint_resolution_days__lag3": 0.472477752579683,
+    "sales_units__lag2": -0.13873972974322055,
+    "target_units__lag2": -0.10487412908173908,
+    "lead_conversion_pct__lag2": 0.2517693556020555,
+    "operating_margin_pct__lag2": 0.30725071209888316,
+    "overdue_receivables_pct__lag2": 0.6035376413946797,
+    "avg_payment_delay_days__lag2": -0.16705894321443504,
+    "inventory_days__lag2": -0.05612113447617667,
+    "stock_over_90_days_pct__lag2": -0.18346581516949315,
+    "customer_satisfaction__lag2": 0.048725860290638655,
+    "service_retention_pct__lag2": 0.0029637634814067334,
+    "complaint_resolution_days__lag2": -0.10870461460885779,
+    "sales_units__lag1": 0.04878730551286037,
+    "target_units__lag1": 0.23874555127236163,
+    "lead_conversion_pct__lag1": -0.056495063228790283,
+    "operating_margin_pct__lag1": 0.2163408625191664,
+    "overdue_receivables_pct__lag1": -0.053014077680911806,
+    "avg_payment_delay_days__lag1": 0.189077893804368,
+    "inventory_days__lag1": -0.2781283746780308,
+    "stock_over_90_days_pct__lag1": -0.16288345675709753,
+    "customer_satisfaction__lag1": -0.33804527622973973,
+    "service_retention_pct__lag1": 0.3518402520092601,
+    "complaint_resolution_days__lag1": 0.39392113126159983,
+    "sales_units__lag0": 0.11053192483886548,
+    "target_units__lag0": -0.09544400408746655,
+    "lead_conversion_pct__lag0": -0.06410453476523599,
+    "operating_margin_pct__lag0": 0.3327080887056845,
+    "overdue_receivables_pct__lag0": 0.7973182962890126,
+    "avg_payment_delay_days__lag0": 1.9995051115677471,
+    "inventory_days__lag0": 0.17724680066690476,
+    "stock_over_90_days_pct__lag0": 0.11335149948089909,
+    "customer_satisfaction__lag0": -0.054705308431319495,
+    "service_retention_pct__lag0": 0.002911659151100376,
+    "complaint_resolution_days__lag0": 0.5271798653714893
+  },
+  "importance_kind": "standardized signed lag coefficients",
+  "local_attribution": "No genuine local attribution is implemented. Observed KPI values are evidence, not model attributions.",
+  "reliability": {
+    "Persistence baseline": [
+      {
+        "Bin": "0.0\u20130.2",
+        "Samples": 232,
+        "Mean prediction": 0.0,
+        "Observed event rate": 0.034482758620689655
+      },
+      {
+        "Bin": "0.8\u20131.0",
+        "Samples": 6,
+        "Mean prediction": 1.0,
+        "Observed event rate": 0.6666666666666666
+      }
+    ],
+    "Logistic regression": [
+      {
+        "Bin": "0.0\u20130.2",
+        "Samples": 225,
+        "Mean prediction": 0.019345143074758778,
+        "Observed event rate": 0.02666666666666667
+      },
+      {
+        "Bin": "0.2\u20130.4",
+        "Samples": 3,
+        "Mean prediction": 0.27554265077450896,
+        "Observed event rate": 0.0
+      },
+      {
+        "Bin": "0.4\u20130.6",
+        "Samples": 4,
+        "Mean prediction": 0.5235742751104218,
+        "Observed event rate": 0.5
+      },
+      {
+        "Bin": "0.6\u20130.8",
+        "Samples": 5,
+        "Mean prediction": 0.7026799829383494,
+        "Observed event rate": 0.8
+      },
+      {
+        "Bin": "0.8\u20131.0",
+        "Samples": 1,
+        "Mean prediction": 0.9742489364177306,
+        "Observed event rate": 0.0
+      }
+    ],
+    "Random forest": [
+      {
+        "Bin": "0.0\u20130.2",
+        "Samples": 221,
+        "Mean prediction": 0.05525787713739189,
+        "Observed event rate": 0.02262443438914027
+      },
+      {
+        "Bin": "0.2\u20130.4",
+        "Samples": 14,
+        "Mean prediction": 0.290186471645075,
+        "Observed event rate": 0.35714285714285715
+      },
+      {
+        "Bin": "0.4\u20130.6",
+        "Samples": 3,
+        "Mean prediction": 0.48614254334304796,
+        "Observed event rate": 0.6666666666666666
+      }
+    ],
+    "GRU challenger": [
+      {
+        "Bin": "0.0\u20130.2",
+        "Samples": 225,
+        "Mean prediction": 0.0211191363632679,
+        "Observed event rate": 0.022222222222222223
+      },
+      {
+        "Bin": "0.2\u20130.4",
+        "Samples": 4,
+        "Mean prediction": 0.2826066017150879,
+        "Observed event rate": 0.25
+      },
+      {
+        "Bin": "0.4\u20130.6",
+        "Samples": 5,
+        "Mean prediction": 0.49084120988845825,
+        "Observed event rate": 0.6
+      },
+      {
+        "Bin": "0.6\u20130.8",
+        "Samples": 3,
+        "Mean prediction": 0.7073332667350769,
+        "Observed event rate": 1.0
+      },
+      {
+        "Bin": "0.8\u20131.0",
+        "Samples": 1,
+        "Mean prediction": 0.8975188732147217,
+        "Observed event rate": 0.0
+      }
+    ]
+  },
+  "blockers": [],
+  "exclusions": {
+    "excluded_gaps": 0,
+    "excluded_missing_windows": 3
+  },
+  "gru_epochs": [
+    59,
+    4,
+    23
+  ],
+  "final_gru_epochs": 23,
+  "predictor_features": [
+    "sales_units__lag5",
+    "target_units__lag5",
+    "lead_conversion_pct__lag5",
+    "operating_margin_pct__lag5",
+    "overdue_receivables_pct__lag5",
+    "avg_payment_delay_days__lag5",
+    "inventory_days__lag5",
+    "stock_over_90_days_pct__lag5",
+    "customer_satisfaction__lag5",
+    "service_retention_pct__lag5",
+    "complaint_resolution_days__lag5",
+    "sales_units__lag4",
+    "target_units__lag4",
+    "lead_conversion_pct__lag4",
+    "operating_margin_pct__lag4",
+    "overdue_receivables_pct__lag4",
+    "avg_payment_delay_days__lag4",
+    "inventory_days__lag4",
+    "stock_over_90_days_pct__lag4",
+    "customer_satisfaction__lag4",
+    "service_retention_pct__lag4",
+    "complaint_resolution_days__lag4",
+    "sales_units__lag3",
+    "target_units__lag3",
+    "lead_conversion_pct__lag3",
+    "operating_margin_pct__lag3",
+    "overdue_receivables_pct__lag3",
+    "avg_payment_delay_days__lag3",
+    "inventory_days__lag3",
+    "stock_over_90_days_pct__lag3",
+    "customer_satisfaction__lag3",
+    "service_retention_pct__lag3",
+    "complaint_resolution_days__lag3",
+    "sales_units__lag2",
+    "target_units__lag2",
+    "lead_conversion_pct__lag2",
+    "operating_margin_pct__lag2",
+    "overdue_receivables_pct__lag2",
+    "avg_payment_delay_days__lag2",
+    "inventory_days__lag2",
+    "stock_over_90_days_pct__lag2",
+    "customer_satisfaction__lag2",
+    "service_retention_pct__lag2",
+    "complaint_resolution_days__lag2",
+    "sales_units__lag1",
+    "target_units__lag1",
+    "lead_conversion_pct__lag1",
+    "operating_margin_pct__lag1",
+    "overdue_receivables_pct__lag1",
+    "avg_payment_delay_days__lag1",
+    "inventory_days__lag1",
+    "stock_over_90_days_pct__lag1",
+    "customer_satisfaction__lag1",
+    "service_retention_pct__lag1",
+    "complaint_resolution_days__lag1",
+    "sales_units__lag0",
+    "target_units__lag0",
+    "lead_conversion_pct__lag0",
+    "operating_margin_pct__lag0",
+    "overdue_receivables_pct__lag0",
+    "avg_payment_delay_days__lag0",
+    "inventory_days__lag0",
+    "stock_over_90_days_pct__lag0",
+    "customer_satisfaction__lag0",
+    "service_retention_pct__lag0",
+    "complaint_resolution_days__lag0"
+  ]
+}

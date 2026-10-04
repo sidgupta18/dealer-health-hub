@@ -1,0 +1,39 @@
+{
+  "max_age_days": 30,
+  "checks": {
+    "demo_vehicle": "Usable demo / test-drive vehicle",
+    "sales_staff": "Required trained sales staff",
+    "service_capacity": "Service equipment, technicians & essential parts",
+    "facility_access": "Showroom, customer access & facility conditions",
+    "demand_fit": "Local model / variant demand fit"
+  },
+  "prerequisites": {
+    "lead_growth": [
+      "demo_vehicle",
+      "sales_staff"
+    ],
+    "model_campaign": [
+      "demo_vehicle",
+      "sales_staff"
+    ],
+    "service_growth": [
+      "service_capacity"
+    ],
+    "stock_change": [
+      "demand_fit"
+    ],
+    "site_intervention": [
+      "facility_access"
+    ],
+    "verification": [],
+    "remediation": [],
+    "health_review": []
+  },
+  "requires_scope": [
+    "lead_growth",
+    "model_campaign",
+    "service_growth",
+    "stock_change"
+  ],
+  "timezone": "Asia/Kolkata"
+}
